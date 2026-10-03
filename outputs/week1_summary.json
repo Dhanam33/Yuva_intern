@@ -1,0 +1,30 @@
+{
+  "source": "synthetic customer churn dataset; generated with seed 2026",
+  "rows": 1800,
+  "raw_feature_columns": 11,
+  "raw_missing_feature_cells": 562,
+  "duplicate_rows_removed": 0,
+  "duplicate_customer_ids_removed": 0,
+  "encoded_scaled_feature_columns": 25,
+  "processed_feature_cells_remaining_missing": 0,
+  "churn_yes_count": 480,
+  "churn_no_count": 1320,
+  "categorical_encoding": "OneHotEncoder(handle_unknown='ignore')",
+  "numeric_imputation": "median; missingness indicators retained",
+  "categorical_imputation": "most frequent value",
+  "numeric_scaling": "StandardScaler",
+  "feature_selection_method": "mutual information; top 10 encoded features exported for exploratory reporting",
+  "top_10_features": [
+    "monthly_charges",
+    "internet_service_Fiber optic",
+    "contract_Month-to-month",
+    "contract_Two year",
+    "internet_service_No",
+    "internet_service_DSL",
+    "support_tickets",
+    "contract_One year",
+    "senior_citizen",
+    "missingindicator_monthly_charges"
+  ],
+  "model_evaluation_note": "The all-row transformed CSV and mutual-information ranking are educational artifacts only, not inputs to the reported model evaluation. Evaluation scripts fit preprocessing inside the training split/CV folds; any feature selection used for modeling should also be fit there."
+}

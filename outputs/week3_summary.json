@@ -1,0 +1,134 @@
+{
+  "selected_cluster_solution": {
+    "algorithm": "Agglomerative",
+    "n_clusters": 4,
+    "silhouette_score": 0.3549822444668966,
+    "silhouette_sample_size": 1000
+  },
+  "pca": {
+    "component_1_explained_variance_ratio": 0.16435728733001753,
+    "component_2_explained_variance_ratio": 0.10122446147371338,
+    "two_component_cumulative_explained_variance": 0.2655817488037309,
+    "pca_role": "visualization only; clustering used all scaled/encoded features"
+  },
+  "cluster_composition": [
+    {
+      "cluster": 0,
+      "customers": 1579,
+      "churn_count": 421,
+      "churn_rate": 0.26662444585180495
+    },
+    {
+      "cluster": 1,
+      "customers": 74,
+      "churn_count": 22,
+      "churn_rate": 0.2972972972972973
+    },
+    {
+      "cluster": 2,
+      "customers": 75,
+      "churn_count": 21,
+      "churn_rate": 0.28
+    },
+    {
+      "cluster": 3,
+      "customers": 72,
+      "churn_count": 16,
+      "churn_rate": 0.2222222222222222
+    }
+  ],
+  "all_cluster_candidates": [
+    {
+      "algorithm": "K-Means",
+      "n_clusters": 2,
+      "silhouette_score": 0.12029548525147271,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "K-Means",
+      "n_clusters": 3,
+      "silhouette_score": 0.1399481075438082,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "K-Means",
+      "n_clusters": 4,
+      "silhouette_score": 0.15730398093732476,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "K-Means",
+      "n_clusters": 5,
+      "silhouette_score": 0.17526149177011133,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "K-Means",
+      "n_clusters": 6,
+      "silhouette_score": 0.16794358872322984,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "Agglomerative",
+      "n_clusters": 2,
+      "silhouette_score": 0.33349920410468487,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "Agglomerative",
+      "n_clusters": 3,
+      "silhouette_score": 0.3459286407665215,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "Agglomerative",
+      "n_clusters": 4,
+      "silhouette_score": 0.3549822444668966,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "Agglomerative",
+      "n_clusters": 5,
+      "silhouette_score": 0.3498785662150595,
+      "silhouette_sample_size": 1000
+    },
+    {
+      "algorithm": "Agglomerative",
+      "n_clusters": 6,
+      "silhouette_score": 0.15744353472819078,
+      "silhouette_sample_size": 1000
+    }
+  ],
+  "hyperparameter_tuning": {
+    "model": "Logistic Regression",
+    "best_params": {
+      "classifier__C": 0.1
+    },
+    "best_cross_validation_roc_auc_mean": 0.8018432354083977,
+    "best_cross_validation_roc_auc_std": 0.022408124288575464,
+    "cv_folds": 5,
+    "cv_strategy": "StratifiedKFold(shuffle=True, random_state=42)",
+    "test_metrics": {
+      "accuracy": 0.675,
+      "balanced_accuracy": 0.6690340909090908,
+      "precision": 0.42857142857142855,
+      "recall": 0.65625,
+      "f1": 0.5185185185185185,
+      "roc_auc": 0.7661379419191919
+    },
+    "test_confusion_matrix": [
+      [
+        180,
+        84
+      ],
+      [
+        33,
+        63
+      ]
+    ],
+    "n_train": 1440,
+    "n_test": 360,
+    "test_set_used_for_tuning": false
+  },
+  "interpretation_note": "Silhouette score measures separation in the transformed feature space; it is not proof that clusters are natural customer segments. PCA is a 2-D view only."
+}

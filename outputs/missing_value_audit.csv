@@ -1,0 +1,12 @@
+feature,missing_count,missing_percent,dtype
+tenure_months,77,4.277777777777778,float64
+monthly_charges,78,4.333333333333333,float64
+total_charges,74,4.111111111111111,float64
+support_tickets,89,4.944444444444445,float64
+senior_citizen,0,0.0,int64
+contract,47,2.611111111111111,str
+internet_service,42,2.3333333333333335,str
+payment_method,52,2.888888888888889,str
+paperless_billing,36,2.0,str
+partner,33,1.8333333333333333,str
+dependents,34,1.8888888888888888,str
