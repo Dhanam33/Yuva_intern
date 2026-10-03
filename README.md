@@ -2,7 +2,7 @@
 
 This repository contains completed, runnable deliverables for the four-week Python and machine-learning task: data preprocessing, supervised learning, clustering/model evaluation, and an end-to-end prediction API.
 
-**GitHub project URL:** https://github.com/Dhanam33/Yuva_intern
+**GitHub project URL:** https://github.com/Dhanam33/Yuva_intern/tree/arena/01a1004b-yuva-intern
 **Working branch for this submission:** `arena/01a1004b-yuva-intern`
 
 > **Dataset note:** the bundled 1,800-row customer-churn CSV is reproducible synthetic teaching data, not real customer information. It intentionally contains missing values and categorical fields so all requested preprocessing steps can be demonstrated. Model scores must not be interpreted as evidence of real-world business performance.

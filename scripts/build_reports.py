@@ -246,7 +246,7 @@ def base_document(title: str, subtitle: str) -> Document:
     repository = document.add_paragraph()
     repository.alignment = WD_ALIGN_PARAGRAPH.CENTER
     repository.paragraph_format.space_after = Pt(14)
-    repo_run = repository.add_run("Project repository: https://github.com/Dhanam33/Yuva_intern")
+    repo_run = repository.add_run("Project repository: https://github.com/Dhanam33/Yuva_intern/tree/arena/01a1004b-yuva-intern")
     repo_run.font.size = Pt(8)
     repo_run.font.color.rgb = RGBColor(35, 122, 122)
     return document
