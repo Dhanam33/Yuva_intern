@@ -1,0 +1,26 @@
+feature,mutual_information
+monthly_charges,0.07621094765341563
+internet_service_Fiber optic,0.04216242436085932
+contract_Month-to-month,0.03987240825550825
+contract_Two year,0.030438409938862633
+internet_service_No,0.02118285750439794
+internet_service_DSL,0.01254743896210278
+support_tickets,0.007755753923716968
+contract_One year,0.006403472719129041
+senior_citizen,0.005537769014790861
+missingindicator_monthly_charges,0.0039102308859195745
+total_charges,0.002562783993052653
+tenure_months,0.0022029282815467788
+missingindicator_support_tickets,0.0018835331238422626
+payment_method_Electronic check,0.0006687857191508828
+dependents_No,0.0005544391270606575
+dependents_Yes,0.0005544391270606575
+paperless_billing_No,0.000365652646418968
+paperless_billing_Yes,0.000365652646418968
+partner_No,0.0002750602406043079
+partner_Yes,0.0002750602406043079
+payment_method_Credit card,0.00019970725028220504
+payment_method_Bank transfer,0.00019919096991405372
+payment_method_Mailed check,2.729648623550629e-06
+missingindicator_tenure_months,0.0
+missingindicator_total_charges,0.0

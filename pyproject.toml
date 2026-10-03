@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yuva-ml-weekly-capstone"
+version = "1.0.0"
+description = "Four-week Python and machine-learning internship project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=2.0",
+  "scikit-learn==1.9.1",
+  "matplotlib>=3.7",
+  "joblib>=1.2",
+  "fastapi>=0.110",
+  "uvicorn>=0.25",
+  "python-docx>=1.1",
+  "python-pptx>=0.6.23",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "httpx>=0.25"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,56 @@
+{
+  "split": "80/20 stratified test split; random_state=42",
+  "n_train_classification": 1440,
+  "n_test_classification": 360,
+  "positive_class": "Yes (1)",
+  "classification_models": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.6777777777777778,
+      "balanced_accuracy": 0.6742424242424242,
+      "precision": 0.43243243243243246,
+      "recall": 0.6666666666666666,
+      "f1": 0.5245901639344263,
+      "roc_auc": 0.7671243686868686
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.6722222222222223,
+      "balanced_accuracy": 0.6505681818181819,
+      "precision": 0.42028985507246375,
+      "recall": 0.6041666666666666,
+      "f1": 0.49572649572649574,
+      "roc_auc": 0.7128511679292929
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.6972222222222222,
+      "balanced_accuracy": 0.6676136363636364,
+      "precision": 0.4496124031007752,
+      "recall": 0.6041666666666666,
+      "f1": 0.5155555555555555,
+      "roc_auc": 0.7462910353535354
+    },
+    {
+      "model": "K-Nearest Neighbors",
+      "accuracy": 0.7305555555555555,
+      "balanced_accuracy": 0.5942234848484849,
+      "precision": 0.4915254237288136,
+      "recall": 0.3020833333333333,
+      "f1": 0.3741935483870968,
+      "roc_auc": 0.6962397411616162
+    }
+  ],
+  "best_by_test_roc_auc_for_reporting_only": "Logistic Regression",
+  "regression": {
+    "model": "Linear Regression",
+    "target": "monthly_charges",
+    "n_train": 1377,
+    "n_test": 345,
+    "mae": 7.610765805052231,
+    "rmse": 9.680567261910044,
+    "r2": 0.8167550531134018,
+    "leakage_control": "total_charges excluded because it is derived from monthly_charges"
+  },
+  "important_note": "Reported test metrics are for comparison; model selection should use cross-validation on training data, not the test set."
+}

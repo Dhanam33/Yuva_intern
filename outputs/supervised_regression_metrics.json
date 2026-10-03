@@ -1,0 +1,10 @@
+{
+  "model": "Linear Regression",
+  "target": "monthly_charges",
+  "n_train": 1377,
+  "n_test": 345,
+  "mae": 7.610765805052231,
+  "rmse": 9.680567261910044,
+  "r2": 0.8167550531134018,
+  "leakage_control": "total_charges excluded because it is derived from monthly_charges"
+}

@@ -1,0 +1,31 @@
+{
+  "model": "Logistic Regression",
+  "best_params": {
+    "classifier__C": 0.1
+  },
+  "best_cross_validation_roc_auc_mean": 0.8018432354083977,
+  "best_cross_validation_roc_auc_std": 0.022408124288575464,
+  "cv_folds": 5,
+  "cv_strategy": "StratifiedKFold(shuffle=True, random_state=42)",
+  "test_metrics": {
+    "accuracy": 0.675,
+    "balanced_accuracy": 0.6690340909090908,
+    "precision": 0.42857142857142855,
+    "recall": 0.65625,
+    "f1": 0.5185185185185185,
+    "roc_auc": 0.7661379419191919
+  },
+  "test_confusion_matrix": [
+    [
+      180,
+      84
+    ],
+    [
+      33,
+      63
+    ]
+  ],
+  "n_train": 1440,
+  "n_test": 360,
+  "test_set_used_for_tuning": false
+}

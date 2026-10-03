@@ -1,0 +1,30 @@
+{
+  "artifact": "artifacts/churn_model.joblib",
+  "model_type": "scikit-learn Pipeline(LogisticRegression)",
+  "target": "churn (No=0, Yes=1)",
+  "feature_columns": [
+    "tenure_months",
+    "monthly_charges",
+    "total_charges",
+    "support_tickets",
+    "senior_citizen",
+    "contract",
+    "internet_service",
+    "payment_method",
+    "paperless_billing",
+    "partner",
+    "dependents"
+  ],
+  "training_rows": 1800,
+  "scikit_learn_version": "1.9.1",
+  "python_version": "3.11.2",
+  "tuned_regularization_C": 0.1,
+  "training_data": "synthetic customer churn sample, generated with seed 2026",
+  "preprocessing_included": [
+    "median imputation plus missingness indicators for numeric fields",
+    "most-frequent imputation for categorical fields",
+    "standard scaling for numeric fields",
+    "one-hot encoding with unknown-category tolerance"
+  ],
+  "deployment_note": "Artifact contains the full preprocessing and prediction pipeline; supply raw feature values."
+}
