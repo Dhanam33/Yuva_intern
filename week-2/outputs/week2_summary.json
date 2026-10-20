@@ -1,0 +1,551 @@
+{
+  "project": "Yuva Internship - Week 2: Supervised Machine Learning Models",
+  "author": "Peram Dhanam Srinivas",
+  "generated_at_utc": "2026-10-20T12:46:28+00:00",
+  "dataset": {
+    "source_file": "week-2/data/customer_churn_raw.csv",
+    "description": "Reproducible synthetic customer-churn sample. Teaching data, not real customer information.",
+    "rows": 1800,
+    "columns": 13,
+    "numeric_features": [
+      "tenure_months",
+      "monthly_charges",
+      "total_charges",
+      "support_tickets",
+      "senior_citizen"
+    ],
+    "categorical_features": [
+      "contract",
+      "internet_service",
+      "payment_method",
+      "paperless_billing",
+      "partner",
+      "dependents"
+    ],
+    "target": "churn"
+  },
+  "tasks": {
+    "classification": "Predict churn (binary: No = 0, Yes = 1)",
+    "regression": "Predict monthly_charges (continuous)"
+  },
+  "classification": {
+    "split": {
+      "test_size": 0.2,
+      "random_state": 42,
+      "stratified": true,
+      "train_rows": 1440,
+      "test_rows": 360,
+      "train_positive_rate": 0.26666666666666666,
+      "test_positive_rate": 0.26666666666666666,
+      "positive_class": "Yes (churn = 1)"
+    },
+    "models": [
+      {
+        "model": "Logistic Regression",
+        "accuracy": 0.6777777777777778,
+        "balanced_accuracy": 0.6709280303030303,
+        "precision": 0.4315068493150685,
+        "recall": 0.65625,
+        "f1": 0.5206611570247934,
+        "roc_auc": 0.7688604797979798,
+        "pr_auc": 0.5179601120666903,
+        "mcc": 0.3078913934101686,
+        "log_loss": 0.574337010758011,
+        "brier": 0.1964779409050577,
+        "true_negative": 181,
+        "false_positive": 83,
+        "false_negative": 33,
+        "true_positive": 63
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.7166666666666667,
+        "balanced_accuracy": 0.6941287878787878,
+        "precision": 0.47692307692307695,
+        "recall": 0.6458333333333334,
+        "f1": 0.5486725663716814,
+        "roc_auc": 0.759548611111111,
+        "pr_auc": 0.5109137217902148,
+        "mcc": 0.3574554510894049,
+        "log_loss": 0.5614395540954494,
+        "brier": 0.18913520991124774,
+        "true_negative": 196,
+        "false_positive": 68,
+        "false_negative": 34,
+        "true_positive": 62
+      },
+      {
+        "model": "K-Nearest Neighbors",
+        "accuracy": 0.7444444444444445,
+        "balanced_accuracy": 0.6335227272727273,
+        "precision": 0.5277777777777778,
+        "recall": 0.3958333333333333,
+        "f1": 0.4523809523809524,
+        "roc_auc": 0.7336253156565656,
+        "pr_auc": 0.4680384256302199,
+        "mcc": 0.29522985823239356,
+        "log_loss": 0.6985446509920972,
+        "brier": 0.17466154456729746,
+        "true_negative": 230,
+        "false_positive": 34,
+        "false_negative": 58,
+        "true_positive": 38
+      },
+      {
+        "model": "Decision Tree",
+        "accuracy": 0.6527777777777778,
+        "balanced_accuracy": 0.6605113636363636,
+        "precision": 0.4088050314465409,
+        "recall": 0.6770833333333334,
+        "f1": 0.5098039215686274,
+        "roc_auc": 0.7248066603535354,
+        "pr_auc": 0.4864359725664151,
+        "mcc": 0.2858753893393904,
+        "log_loss": 1.089969655993083,
+        "brier": 0.22148986917286162,
+        "true_negative": 170,
+        "false_positive": 94,
+        "false_negative": 31,
+        "true_positive": 65
+      },
+      {
+        "model": "Dummy (most frequent)",
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "pr_auc": 0.26666666666666666,
+        "mcc": 0.0,
+        "log_loss": 9.611640903764574,
+        "brier": 0.26666666666666666,
+        "true_negative": 264,
+        "false_positive": 0,
+        "false_negative": 96,
+        "true_positive": 0
+      },
+      {
+        "model": "Dummy (stratified)",
+        "accuracy": 0.6611111111111111,
+        "balanced_accuracy": 0.5535037878787878,
+        "precision": 0.3522727272727273,
+        "recall": 0.3229166666666667,
+        "f1": 0.33695652173913043,
+        "roc_auc": 0.553503787878788,
+        "pr_auc": 0.2943102904040404,
+        "mcc": 0.11010988705172442,
+        "log_loss": 12.214793648534146,
+        "brier": 0.3388888888888889,
+        "true_negative": 207,
+        "false_positive": 57,
+        "false_negative": 65,
+        "true_positive": 31
+      }
+    ],
+    "cross_validation": {
+      "folds": 5,
+      "scoring": "roc_auc and f1, stratified",
+      "results": [
+        {
+          "model": "Logistic Regression",
+          "cv_roc_auc_mean": 0.8053961379104806,
+          "cv_roc_auc_std": 0.025189520972703154,
+          "cv_f1_mean": 0.5987218978323897,
+          "cv_f1_std": 0.022367584193795677,
+          "fold_1_roc_auc": 0.8026315789473684,
+          "fold_2_roc_auc": 0.7574321413183972,
+          "fold_3_roc_auc": 0.8219363574813812,
+          "fold_4_roc_auc": 0.8207053609897211,
+          "fold_5_roc_auc": 0.8242752508155351
+        },
+        {
+          "model": "Random Forest",
+          "cv_roc_auc_mean": 0.7958881408951888,
+          "cv_roc_auc_std": 0.025784238367417285,
+          "cv_f1_mean": 0.590194925180709,
+          "cv_f1_std": 0.03237118830627528,
+          "fold_1_roc_auc": 0.7701713008937437,
+          "fold_2_roc_auc": 0.7605711823721302,
+          "fold_3_roc_auc": 0.8059334030898012,
+          "fold_4_roc_auc": 0.8240906013417861,
+          "fold_5_roc_auc": 0.8186742167784822
+        },
+        {
+          "model": "Decision Tree",
+          "cv_roc_auc_mean": 0.7673497632654389,
+          "cv_roc_auc_std": 0.027447799663436967,
+          "cv_f1_mean": 0.5588825246547131,
+          "cv_f1_std": 0.012413685346587584,
+          "fold_1_roc_auc": 0.7382075471698113,
+          "fold_2_roc_auc": 0.7526928048255064,
+          "fold_3_roc_auc": 0.7542007755277897,
+          "fold_4_roc_auc": 0.7745122176401797,
+          "fold_5_roc_auc": 0.8171354711639071
+        },
+        {
+          "model": "K-Nearest Neighbors",
+          "cv_roc_auc_mean": 0.7664842425420042,
+          "cv_roc_auc_std": 0.030079123060097517,
+          "cv_f1_mean": 0.4509444617651489,
+          "cv_f1_std": 0.052473256392580735,
+          "fold_1_roc_auc": 0.769240317775571,
+          "fold_2_roc_auc": 0.7105311749861513,
+          "fold_3_roc_auc": 0.7698036560595802,
+          "fold_4_roc_auc": 0.7833446174678402,
+          "fold_5_roc_auc": 0.7995014464208777
+        }
+      ],
+      "selected_model": "Logistic Regression"
+    },
+    "threshold_analysis": {
+      "model": "Logistic Regression",
+      "rows": [
+        {
+          "threshold": 0.1,
+          "precision": 0.3051948051948052,
+          "recall": 0.9791666666666666,
+          "f1": 0.46534653465346537,
+          "accuracy": 0.4,
+          "predicted_positive_rate": 0.8555555555555555
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.31958762886597936,
+          "recall": 0.96875,
+          "f1": 0.4806201550387597,
+          "accuracy": 0.44166666666666665,
+          "predicted_positive_rate": 0.8083333333333333
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.3371212121212121,
+          "recall": 0.9270833333333334,
+          "f1": 0.49444444444444446,
+          "accuracy": 0.49444444444444446,
+          "predicted_positive_rate": 0.7333333333333333
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.36065573770491804,
+          "recall": 0.9166666666666666,
+          "f1": 0.5176470588235295,
+          "accuracy": 0.5444444444444444,
+          "predicted_positive_rate": 0.6777777777777778
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.3782608695652174,
+          "recall": 0.90625,
+          "f1": 0.5337423312883436,
+          "accuracy": 0.5777777777777777,
+          "predicted_positive_rate": 0.6388888888888888
+        },
+        {
+          "threshold": 0.35,
+          "precision": 0.4029126213592233,
+          "recall": 0.8645833333333334,
+          "f1": 0.5496688741721855,
+          "accuracy": 0.6222222222222222,
+          "predicted_positive_rate": 0.5722222222222222
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.42245989304812837,
+          "recall": 0.8229166666666666,
+          "f1": 0.558303886925795,
+          "accuracy": 0.6527777777777778,
+          "predicted_positive_rate": 0.5194444444444445
+        },
+        {
+          "threshold": 0.45,
+          "precision": 0.42168674698795183,
+          "recall": 0.7291666666666666,
+          "f1": 0.5343511450381679,
+          "accuracy": 0.6611111111111111,
+          "predicted_positive_rate": 0.46111111111111114
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.4315068493150685,
+          "recall": 0.65625,
+          "f1": 0.5206611570247934,
+          "accuracy": 0.6777777777777778,
+          "predicted_positive_rate": 0.40555555555555556
+        },
+        {
+          "threshold": 0.55,
+          "precision": 0.453125,
+          "recall": 0.6041666666666666,
+          "f1": 0.5178571428571429,
+          "accuracy": 0.7,
+          "predicted_positive_rate": 0.35555555555555557
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.47368421052631576,
+          "recall": 0.5625,
+          "f1": 0.5142857142857142,
+          "accuracy": 0.7166666666666667,
+          "predicted_positive_rate": 0.31666666666666665
+        },
+        {
+          "threshold": 0.65,
+          "precision": 0.5274725274725275,
+          "recall": 0.5,
+          "f1": 0.5133689839572193,
+          "accuracy": 0.7472222222222222,
+          "predicted_positive_rate": 0.25277777777777777
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.5822784810126582,
+          "recall": 0.4791666666666667,
+          "f1": 0.5257142857142857,
+          "accuracy": 0.7694444444444445,
+          "predicted_positive_rate": 0.21944444444444444
+        },
+        {
+          "threshold": 0.75,
+          "precision": 0.6440677966101694,
+          "recall": 0.3958333333333333,
+          "f1": 0.49032258064516127,
+          "accuracy": 0.7805555555555556,
+          "predicted_positive_rate": 0.1638888888888889
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.6808510638297872,
+          "recall": 0.3333333333333333,
+          "f1": 0.44755244755244755,
+          "accuracy": 0.7805555555555556,
+          "predicted_positive_rate": 0.13055555555555556
+        },
+        {
+          "threshold": 0.85,
+          "precision": 0.5833333333333334,
+          "recall": 0.14583333333333334,
+          "f1": 0.23333333333333334,
+          "accuracy": 0.7444444444444445,
+          "predicted_positive_rate": 0.06666666666666667
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.42857142857142855,
+          "recall": 0.03125,
+          "f1": 0.05825242718446602,
+          "accuracy": 0.7305555555555555,
+          "predicted_positive_rate": 0.019444444444444445
+        }
+      ],
+      "note": "The default 0.5 threshold is a convention, not a law. Lowering it raises recall (more churners caught) and lowers precision (more false alarms). The right threshold depends on the cost of each error."
+    },
+    "class_weighting": {
+      "rows": [
+        {
+          "setting": "No class weight",
+          "accuracy": 0.775,
+          "precision": 0.6056338028169014,
+          "recall": 0.4479166666666667,
+          "f1": 0.5149700598802395,
+          "roc_auc": 0.770675505050505,
+          "predicted_positive_rate": 0.19722222222222222
+        },
+        {
+          "setting": "class_weight='balanced'",
+          "accuracy": 0.6777777777777778,
+          "precision": 0.4315068493150685,
+          "recall": 0.65625,
+          "f1": 0.5206611570247934,
+          "roc_auc": 0.7688604797979798,
+          "predicted_positive_rate": 0.40555555555555556
+        }
+      ],
+      "note": "Balancing class weights trades accuracy for recall on the minority class. This is a deliberate choice for churn, where a missed churner usually costs more than a wasted retention offer."
+    },
+    "feature_importance": [
+      {
+        "feature": "monthly_charges",
+        "importance": 0.23643943196509395
+      },
+      {
+        "feature": "tenure_months",
+        "importance": 0.12199275803218566
+      },
+      {
+        "feature": "total_charges",
+        "importance": 0.10853656057304857
+      },
+      {
+        "feature": "contract_Month-to-month",
+        "importance": 0.10602484793084412
+      },
+      {
+        "feature": "internet_service_Fiber optic",
+        "importance": 0.088166877964526
+      },
+      {
+        "feature": "contract_Two year",
+        "importance": 0.07518604916899721
+      },
+      {
+        "feature": "support_tickets",
+        "importance": 0.049656214642095554
+      },
+      {
+        "feature": "internet_service_No",
+        "importance": 0.03128309304983255
+      },
+      {
+        "feature": "contract_One year",
+        "importance": 0.02793583607796929
+      },
+      {
+        "feature": "internet_service_DSL",
+        "importance": 0.026912565698364407
+      },
+      {
+        "feature": "partner_Yes",
+        "importance": 0.014637374404856808
+      },
+      {
+        "feature": "payment_method_Electronic check",
+        "importance": 0.014265636394745072
+      },
+      {
+        "feature": "partner_No",
+        "importance": 0.013067961071413729
+      },
+      {
+        "feature": "payment_method_Credit card",
+        "importance": 0.01293991562707554
+      },
+      {
+        "feature": "payment_method_Bank transfer",
+        "importance": 0.012511943727545997
+      }
+    ]
+  },
+  "regression": {
+    "target": "monthly_charges",
+    "features_used": [
+      "tenure_months",
+      "support_tickets",
+      "senior_citizen",
+      "contract",
+      "internet_service",
+      "payment_method",
+      "paperless_billing",
+      "partner",
+      "dependents"
+    ],
+    "excluded_features": {
+      "total_charges": "computed from monthly_charges and tenure, so it leaks the target"
+    },
+    "split": {
+      "test_size": 0.2,
+      "random_state": 42,
+      "train_rows": 1377,
+      "test_rows": 345
+    },
+    "models": [
+      {
+        "model": "Linear Regression",
+        "mae": 7.588652887376545,
+        "rmse": 9.649849958167612,
+        "r2": 0.81791611324824,
+        "mape": 0.15282187797204388,
+        "median_absolute_error": 5.9619482610163885
+      },
+      {
+        "model": "Random Forest Regressor",
+        "mae": 7.803205174403485,
+        "rmse": 9.96030034334721,
+        "r2": 0.806011822673257,
+        "mape": 0.1588891319270224,
+        "median_absolute_error": 5.922124146518229
+      },
+      {
+        "model": "Decision Tree Regressor",
+        "mae": 7.830015191874989,
+        "rmse": 10.017497332204448,
+        "r2": 0.8037774728481384,
+        "mape": 0.15820218479569584,
+        "median_absolute_error": 5.843030303030325
+      },
+      {
+        "model": "K-Nearest Neighbors Regressor",
+        "mae": 10.869877123834906,
+        "rmse": 13.74002385785883,
+        "r2": 0.6308478795082051,
+        "mape": 0.29527628049737126,
+        "median_absolute_error": 9.00326522872615
+      },
+      {
+        "model": "Dummy (mean)",
+        "mae": 18.498555650279435,
+        "rmse": 22.803992491024836,
+        "r2": -0.01683894753689219,
+        "mape": 0.5308061086003074,
+        "median_absolute_error": 15.994633260711701
+      }
+    ],
+    "cross_validation": {
+      "folds": 5,
+      "results": [
+        {
+          "model": "Linear Regression",
+          "cv_r2_mean": 0.7887537253805119,
+          "cv_r2_std": 0.043282814078333454,
+          "fold_1_r2": 0.8356527911836402,
+          "fold_2_r2": 0.7427828485382872,
+          "fold_3_r2": 0.8357740304241699,
+          "fold_4_r2": 0.7356785509291156,
+          "fold_5_r2": 0.7938804058273468
+        },
+        {
+          "model": "Decision Tree Regressor",
+          "cv_r2_mean": 0.7821703732392405,
+          "cv_r2_std": 0.0426554886937639,
+          "fold_1_r2": 0.8278939447935036,
+          "fold_2_r2": 0.7351228631028057,
+          "fold_3_r2": 0.8304015216188385,
+          "fold_4_r2": 0.7325733797566171,
+          "fold_5_r2": 0.7848601569244378
+        },
+        {
+          "model": "Random Forest Regressor",
+          "cv_r2_mean": 0.7786492154736535,
+          "cv_r2_std": 0.04197862163018423,
+          "fold_1_r2": 0.825703822016514,
+          "fold_2_r2": 0.7284353698882676,
+          "fold_3_r2": 0.820577762042207,
+          "fold_4_r2": 0.7312830994177282,
+          "fold_5_r2": 0.7872460240035511
+        },
+        {
+          "model": "K-Nearest Neighbors Regressor",
+          "cv_r2_mean": 0.601383641138057,
+          "cv_r2_std": 0.029729962204813207,
+          "fold_1_r2": 0.6552315943887845,
+          "fold_2_r2": 0.5695712857481492,
+          "fold_3_r2": 0.6015931857993366,
+          "fold_4_r2": 0.6016684829683363,
+          "fold_5_r2": 0.5788536567856783
+        }
+      ],
+      "selected_model": "Linear Regression"
+    }
+  },
+  "headline": {
+    "classification_best_roc_auc_model": "Logistic Regression",
+    "classification_best_roc_auc": 0.7688604797979798,
+    "classification_best_accuracy_model": "K-Nearest Neighbors",
+    "classification_best_accuracy": 0.7444444444444445,
+    "regression_best_r2_model": "Linear Regression",
+    "regression_best_r2": 0.81791611324824,
+    "regression_linear_mae": 7.588652887376545
+  },
+  "methodology_note": "Hyperparameters were fixed in advance. Model selection used 5-fold cross-validation on the training split; the held-out test split was scored once for reporting and was never used to choose a model.",
+  "limitations_note": "The dataset is synthetic, so scores describe the generator rather than a real business. Accuracy on an imbalanced target is misleading on its own; precision, recall, F1 and ROC-AUC are reported alongside it."
+}

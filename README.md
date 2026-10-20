@@ -39,9 +39,38 @@ python week-1/src/make_pipeline_diagram.py
 python week-1/docs/build_report.py          # rebuild the Week 1 report from those artifacts
 ```
 
-The `week-1/` folder is standalone: it has its own dataset copy, dependency list and
-ignore rules, so it can be submitted on its own. The root-level `src/yuva_ml/` package
-remains the source of truth for the Week 2–4 work.
+## Week 2 deliverable folder
+
+`week-2/` is the matching self-contained folder for the supervised-learning week. Four
+classifiers (Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors) and
+four regressors are trained on identical leakage-safe pipelines, with dummy baselines
+included so that "better" has a meaning.
+
+| Item | Path |
+|---|---|
+| Word report | `week-2/reports/Week_2_Supervised_Machine_Learning_Report.docx` |
+| Submission description (273 words) | `week-2/docs/SUBMISSION_DESCRIPTION.md` |
+| Metric-by-metric analysis | `week-2/docs/model_comparison.md` |
+| Teaching notebook | `week-2/notebooks/week2_supervised_learning.ipynb` |
+| Training source | `week-2/src/train_models.py` |
+| Generated tables and figures | `week-2/outputs/` |
+
+```bash
+python week-2/src/train_models.py           # trains all models, writes every table
+python week-2/src/make_figures.py           # builds the 13 figures
+python week-2/docs/build_report.py          # rebuilds the Week 2 report
+```
+
+**Headline results.** K-Nearest Neighbors has the best accuracy (0.744) but the worst
+recall (0.396); Logistic Regression has the best ROC-AUC (0.769) with roughly double that
+recall. A do-nothing baseline scores 0.733 accuracy — higher than two of the four real
+models — because balanced class weights deliberately trade accuracy for recall. Linear
+Regression predicts monthly charges with R² 0.818 and MAE 7.59, with `total_charges`
+excluded to prevent leakage.
+
+The `week-1/` and `week-2/` folders are standalone: each has its own dataset copy,
+dependency list and ignore rules, so either can be submitted on its own. The root-level
+`src/yuva_ml/` package remains the source of truth for the shared Week 3–4 work.
 
 ## Run locally
 
