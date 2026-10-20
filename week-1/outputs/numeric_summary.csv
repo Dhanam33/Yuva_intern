@@ -1,0 +1,6 @@
+feature,count,mean,std,min,median,max
+tenure_months,1723.0,37.193,17.434,1.0,37.0,71.0
+monthly_charges,1722.0,60.727,21.816,18.0,64.335,106.24
+total_charges,1726.0,2227.577,1372.352,0.0,2020.29,6881.94
+support_tickets,1711.0,1.002,1.049,0.0,1.0,6.0
+senior_citizen,1800.0,0.177,0.382,0.0,0.0,1.0

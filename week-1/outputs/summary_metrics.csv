@@ -1,0 +1,9 @@
+metric,value
+Rows (raw),1800
+Rows (clean),1800
+Raw feature columns,11
+Raw missing feature cells,562
+Encoded/scaled model features,25
+Remaining missing cells,0
+Top feature (mutual information),monthly_charges
+Top mutual information score,0.0592

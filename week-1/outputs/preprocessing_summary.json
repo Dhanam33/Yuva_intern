@@ -1,0 +1,576 @@
+{
+  "project": "Yuva Internship - Week 1: Python for Machine Learning & Data Preprocessing",
+  "generated_at_utc": "2026-10-20T12:04:53+00:00",
+  "dataset": {
+    "source_file": "week-1/data/customer_churn_raw.csv",
+    "description": "Reproducible synthetic customer-churn sample with numeric and categorical inputs, a binary churn label and deliberately introduced missing values. It is teaching data, not real customer information.",
+    "rows_raw": 1800,
+    "columns_raw": 13,
+    "rows_clean": 1800,
+    "target_counts": {
+      "No": 1320,
+      "Yes": 480
+    },
+    "target_yes_rate": 0.2667,
+    "numeric_features": [
+      "tenure_months",
+      "monthly_charges",
+      "total_charges",
+      "support_tickets",
+      "senior_citizen"
+    ],
+    "categorical_features": [
+      "contract",
+      "internet_service",
+      "payment_method",
+      "paperless_billing",
+      "partner",
+      "dependents"
+    ],
+    "id_column": "customer_id",
+    "target_column": "churn",
+    "column_dictionary": {
+      "customer_id": "Unique customer identifier. Used for traceability only, never as a model input.",
+      "tenure_months": "Number of months the customer has been with the company.",
+      "monthly_charges": "Current monthly bill in currency units.",
+      "total_charges": "Cumulative amount billed to date.",
+      "support_tickets": "Number of support tickets opened by the customer.",
+      "senior_citizen": "Binary indicator: 1 if the customer is a senior citizen, otherwise 0.",
+      "contract": "Contract type: Month-to-month, One year, or Two year.",
+      "internet_service": "Internet service type: DSL, Fiber optic, or No.",
+      "payment_method": "Billing method: Electronic check, Credit card, Bank transfer, or Mailed check.",
+      "paperless_billing": "Whether the customer uses paperless billing (Yes/No).",
+      "partner": "Whether the customer has a partner (Yes/No).",
+      "dependents": "Whether the customer has dependents (Yes/No).",
+      "churn": "Target label: Yes if the customer churned, No otherwise."
+    }
+  },
+  "quality_audit": {
+    "rows": 1800,
+    "columns": 13,
+    "memory_kb": 948.5,
+    "duplicate_rows": 0,
+    "duplicate_customer_ids": 0,
+    "missing_cells_total": 562,
+    "missing_cells_features": 562,
+    "missing_cells_percent": 2.84,
+    "columns_with_missing": 10,
+    "missing_by_column": {
+      "customer_id": 0,
+      "tenure_months": 77,
+      "monthly_charges": 78,
+      "total_charges": 74,
+      "support_tickets": 89,
+      "senior_citizen": 0,
+      "contract": 47,
+      "internet_service": 42,
+      "payment_method": 52,
+      "paperless_billing": 36,
+      "partner": 33,
+      "dependents": 34,
+      "churn": 0
+    },
+    "whitespace_cells": 0,
+    "empty_string_cells": 0,
+    "negative_numeric_cells": {
+      "tenure_months": 0,
+      "monthly_charges": 0,
+      "total_charges": 0,
+      "support_tickets": 0,
+      "senior_citizen": 0
+    },
+    "invalid_senior_citizen_cells": 0,
+    "target_counts": {
+      "No": 1320,
+      "Yes": 480
+    },
+    "target_yes_rate": 0.2667,
+    "dtypes": {
+      "customer_id": "str",
+      "tenure_months": "float64",
+      "monthly_charges": "float64",
+      "total_charges": "float64",
+      "support_tickets": "float64",
+      "senior_citizen": "int64",
+      "contract": "str",
+      "internet_service": "str",
+      "payment_method": "str",
+      "paperless_billing": "str",
+      "partner": "str",
+      "dependents": "str",
+      "churn": "str"
+    },
+    "numeric_summary": {
+      "tenure_months": {
+        "count": 1723,
+        "mean": 37.193,
+        "std": 17.434,
+        "min": 1.0,
+        "median": 37.0,
+        "max": 71.0
+      },
+      "monthly_charges": {
+        "count": 1722,
+        "mean": 60.727,
+        "std": 21.816,
+        "min": 18.0,
+        "median": 64.335,
+        "max": 106.24
+      },
+      "total_charges": {
+        "count": 1726,
+        "mean": 2227.577,
+        "std": 1372.352,
+        "min": 0.0,
+        "median": 2020.29,
+        "max": 6881.94
+      },
+      "support_tickets": {
+        "count": 1711,
+        "mean": 1.002,
+        "std": 1.049,
+        "min": 0.0,
+        "median": 1.0,
+        "max": 6.0
+      },
+      "senior_citizen": {
+        "count": 1800,
+        "mean": 0.177,
+        "std": 0.382,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 1.0
+      }
+    },
+    "categorical_levels": {
+      "contract": 3,
+      "internet_service": 3,
+      "payment_method": 4,
+      "paperless_billing": 2,
+      "partner": 2,
+      "dependents": 2
+    },
+    "checks": [
+      {
+        "check": "Duplicate rows",
+        "result": 0,
+        "action": "None required"
+      },
+      {
+        "check": "Duplicate customer IDs",
+        "result": 0,
+        "action": "None required"
+      },
+      {
+        "check": "Missing feature cells",
+        "result": 562,
+        "action": "Impute per column type"
+      },
+      {
+        "check": "Leading/trailing whitespace cells",
+        "result": 0,
+        "action": "Trim text values"
+      },
+      {
+        "check": "Empty-string cells",
+        "result": 0,
+        "action": "Treat as missing"
+      },
+      {
+        "check": "Impossible negative numeric cells",
+        "result": 0,
+        "action": "Treat as missing"
+      },
+      {
+        "check": "Invalid senior_citizen codes",
+        "result": 0,
+        "action": "Treat as missing"
+      },
+      {
+        "check": "Target values outside {No, Yes}",
+        "result": 0,
+        "action": "Stop: target must be valid"
+      }
+    ]
+  },
+  "cleaning": {
+    "rows_input": 1800,
+    "rows_output": 1800,
+    "rows_removed": 0,
+    "invalid_target_rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "duplicate_ids_removed": 0,
+    "whitespace_cells_trimmed": 0,
+    "empty_string_cells_set_missing": 0,
+    "invalid_numeric_cells_set_missing": 0,
+    "invalid_senior_citizen_cells_set_missing": 0,
+    "rules": [
+      "Trim whitespace and treat empty strings as missing.",
+      "Negative numeric values and invalid senior_citizen codes become missing.",
+      "Rows with missing or invalid target labels are removed.",
+      "Exact duplicate rows are removed.",
+      "Duplicate customer IDs keep the first occurrence."
+    ]
+  },
+  "missing_values": {
+    "columns_with_missing": 10,
+    "total_cells_filled": 562,
+    "highest_missing_feature": "support_tickets",
+    "highest_missing_count": 89,
+    "numeric_strategy": "Median imputation with missing indicators",
+    "categorical_strategy": "Most-frequent (mode) imputation",
+    "remaining_missing_cells": 0
+  },
+  "outliers": {
+    "method": "1.5 x IQR fences computed per numeric feature",
+    "total_outliers": 3,
+    "features_with_outliers": 2,
+    "action": "Retained; documented for transparency",
+    "by_feature": [
+      {
+        "feature": "tenure_months",
+        "q1": 23.0,
+        "q3": 52.0,
+        "iqr": 29.0,
+        "lower_fence": -20.5,
+        "upper_fence": 95.5,
+        "outlier_count": 0,
+        "outlier_percent": 0.0,
+        "action": "No outliers"
+      },
+      {
+        "feature": "monthly_charges",
+        "q1": 47.78,
+        "q3": 78.06,
+        "iqr": 30.28,
+        "lower_fence": 2.35,
+        "upper_fence": 123.48,
+        "outlier_count": 0,
+        "outlier_percent": 0.0,
+        "action": "No outliers"
+      },
+      {
+        "feature": "total_charges",
+        "q1": 1082.97,
+        "q3": 3205.17,
+        "iqr": 2122.2,
+        "lower_fence": -2100.32,
+        "upper_fence": 6388.46,
+        "outlier_count": 2,
+        "outlier_percent": 0.11,
+        "action": "Retained"
+      },
+      {
+        "feature": "support_tickets",
+        "q1": 0.0,
+        "q3": 2.0,
+        "iqr": 2.0,
+        "lower_fence": -3.0,
+        "upper_fence": 5.0,
+        "outlier_count": 1,
+        "outlier_percent": 0.06,
+        "action": "Retained"
+      },
+      {
+        "feature": "senior_citizen",
+        "q1": 0.0,
+        "q3": 0.0,
+        "iqr": 0.0,
+        "lower_fence": "-",
+        "upper_fence": "-",
+        "outlier_count": 0,
+        "outlier_percent": 0.0,
+        "action": "Not assessed (binary 0/1 flag)"
+      }
+    ]
+  },
+  "encoding": {
+    "method": "OneHotEncoder(handle_unknown='ignore', sparse_output=False)",
+    "input_categorical_features": 6,
+    "output_one_hot_columns": 16,
+    "by_feature": [
+      {
+        "feature": "contract",
+        "levels": 3,
+        "categories": "Month-to-month, One year, Two year",
+        "encoded_columns": 3
+      },
+      {
+        "feature": "internet_service",
+        "levels": 3,
+        "categories": "DSL, Fiber optic, No",
+        "encoded_columns": 3
+      },
+      {
+        "feature": "payment_method",
+        "levels": 4,
+        "categories": "Bank transfer, Credit card, Electronic check, Mailed check",
+        "encoded_columns": 4
+      },
+      {
+        "feature": "paperless_billing",
+        "levels": 2,
+        "categories": "No, Yes",
+        "encoded_columns": 2
+      },
+      {
+        "feature": "partner",
+        "levels": 2,
+        "categories": "No, Yes",
+        "encoded_columns": 2
+      },
+      {
+        "feature": "dependents",
+        "levels": 2,
+        "categories": "No, Yes",
+        "encoded_columns": 2
+      }
+    ]
+  },
+  "scaling": {
+    "method": "StandardScaler (z-score): x' = (x - mean) / standard deviation",
+    "features_scaled": 5,
+    "missing_indicators": 4,
+    "by_feature": [
+      {
+        "feature": "tenure_months",
+        "mean_before": 37.1933,
+        "std_before": 17.4341,
+        "mean_after": -0.0,
+        "std_after": 1.0003
+      },
+      {
+        "feature": "monthly_charges",
+        "mean_before": 60.7274,
+        "std_before": 21.8158,
+        "mean_after": -0.0,
+        "std_after": 1.0003
+      },
+      {
+        "feature": "total_charges",
+        "mean_before": 2227.5773,
+        "std_before": 1372.3517,
+        "mean_after": -0.0,
+        "std_after": 1.0003
+      },
+      {
+        "feature": "support_tickets",
+        "mean_before": 1.0018,
+        "std_before": 1.0494,
+        "mean_after": 0.0,
+        "std_after": 1.0003
+      },
+      {
+        "feature": "senior_citizen",
+        "mean_before": 0.1772,
+        "std_before": 0.382,
+        "mean_after": 0.0,
+        "std_after": 1.0003
+      }
+    ]
+  },
+  "feature_selection": {
+    "method": "Mutual information (mutual_info_classif, n_neighbors=5); one-hot columns, binary flags and missing indicators declared discrete",
+    "top_10": [
+      "monthly_charges",
+      "internet_service_Fiber optic",
+      "contract_Month-to-month",
+      "contract_Two year",
+      "internet_service_No",
+      "support_tickets",
+      "internet_service_DSL",
+      "total_charges",
+      "contract_One year",
+      "senior_citizen"
+    ],
+    "top_3": [
+      "monthly_charges",
+      "internet_service_Fiber optic",
+      "contract_Month-to-month"
+    ],
+    "ranking": [
+      {
+        "rank": 1,
+        "feature": "monthly_charges",
+        "mutual_information": 0.0592310364077977
+      },
+      {
+        "rank": 2,
+        "feature": "internet_service_Fiber optic",
+        "mutual_information": 0.04216242436085932
+      },
+      {
+        "rank": 3,
+        "feature": "contract_Month-to-month",
+        "mutual_information": 0.03987240825550825
+      },
+      {
+        "rank": 4,
+        "feature": "contract_Two year",
+        "mutual_information": 0.030438409938862633
+      },
+      {
+        "rank": 5,
+        "feature": "internet_service_No",
+        "mutual_information": 0.02118285750439794
+      },
+      {
+        "rank": 6,
+        "feature": "support_tickets",
+        "mutual_information": 0.013980991126220754
+      },
+      {
+        "rank": 7,
+        "feature": "internet_service_DSL",
+        "mutual_information": 0.01254743896210278
+      },
+      {
+        "rank": 8,
+        "feature": "total_charges",
+        "mutual_information": 0.009203285945737605
+      },
+      {
+        "rank": 9,
+        "feature": "contract_One year",
+        "mutual_information": 0.006403472719129041
+      },
+      {
+        "rank": 10,
+        "feature": "senior_citizen",
+        "mutual_information": 0.0008844139755768976
+      },
+      {
+        "rank": 11,
+        "feature": "payment_method_Electronic check",
+        "mutual_information": 0.0006687857191508828
+      },
+      {
+        "rank": 12,
+        "feature": "dependents_No",
+        "mutual_information": 0.0005544391270606575
+      },
+      {
+        "rank": 13,
+        "feature": "dependents_Yes",
+        "mutual_information": 0.0005544391270606575
+      },
+      {
+        "rank": 14,
+        "feature": "paperless_billing_No",
+        "mutual_information": 0.000365652646418968
+      },
+      {
+        "rank": 15,
+        "feature": "paperless_billing_Yes",
+        "mutual_information": 0.000365652646418968
+      },
+      {
+        "rank": 16,
+        "feature": "partner_No",
+        "mutual_information": 0.0002750602406043079
+      },
+      {
+        "rank": 17,
+        "feature": "partner_Yes",
+        "mutual_information": 0.0002750602406043079
+      },
+      {
+        "rank": 18,
+        "feature": "payment_method_Credit card",
+        "mutual_information": 0.00019970725028220504
+      },
+      {
+        "rank": 19,
+        "feature": "payment_method_Bank transfer",
+        "mutual_information": 0.00019919096991405372
+      },
+      {
+        "rank": 20,
+        "feature": "missingindicator_monthly_charges",
+        "mutual_information": 0.00015366861588684416
+      },
+      {
+        "rank": 21,
+        "feature": "missingindicator_total_charges",
+        "mutual_information": 0.0001006077999094121
+      },
+      {
+        "rank": 22,
+        "feature": "missingindicator_tenure_months",
+        "mutual_information": 4.088082646729746e-05
+      },
+      {
+        "rank": 23,
+        "feature": "payment_method_Mailed check",
+        "mutual_information": 2.729648623550629e-06
+      },
+      {
+        "rank": 24,
+        "feature": "missingindicator_support_tickets",
+        "mutual_information": 1.1913012160497116e-06
+      },
+      {
+        "rank": 25,
+        "feature": "tenure_months",
+        "mutual_information": 0.0
+      }
+    ],
+    "note": "The ranking is an explanatory Week 1 artifact computed on the full cleaned sample. Any feature selection used for model training should be re-fitted inside training folds to avoid leakage. Mutual information scores each feature marginally, so a weak-but-real signal can score near zero and an individually useless feature can still matter in combination with others."
+  },
+  "final_dataset": {
+    "rows": 1800,
+    "model_features": 25,
+    "remaining_missing_cells": 0,
+    "target_encoding": "No = 0, Yes = 1",
+    "features": [
+      "tenure_months",
+      "monthly_charges",
+      "total_charges",
+      "support_tickets",
+      "senior_citizen",
+      "missingindicator_tenure_months",
+      "missingindicator_monthly_charges",
+      "missingindicator_total_charges",
+      "missingindicator_support_tickets",
+      "contract_Month-to-month",
+      "contract_One year",
+      "contract_Two year",
+      "internet_service_DSL",
+      "internet_service_Fiber optic",
+      "internet_service_No",
+      "payment_method_Bank transfer",
+      "payment_method_Credit card",
+      "payment_method_Electronic check",
+      "payment_method_Mailed check",
+      "paperless_billing_No",
+      "paperless_billing_Yes",
+      "partner_No",
+      "partner_Yes",
+      "dependents_No",
+      "dependents_Yes"
+    ]
+  },
+  "model_readiness_check": {
+    "purpose": "Smoke test only: confirms the preprocessing pipeline is model-ready; not a tuned modelling result.",
+    "model": "LogisticRegression (class_weight='balanced')",
+    "test_size": 0.2,
+    "random_state": 42,
+    "test_rows": 360,
+    "accuracy": 0.6778,
+    "roc_auc": 0.7671
+  },
+  "artifacts": [
+    "week-1/outputs/cleaned_customer_churn.csv",
+    "week-1/outputs/preprocessed_customer_churn.csv",
+    "week-1/outputs/selected_feature_dataset.csv",
+    "week-1/outputs/missing_value_audit.csv",
+    "week-1/outputs/data_quality_checks.csv",
+    "week-1/outputs/numeric_summary.csv",
+    "week-1/outputs/categorical_summary.csv",
+    "week-1/outputs/outlier_audit.csv",
+    "week-1/outputs/encoding_summary.csv",
+    "week-1/outputs/scaling_summary.csv",
+    "week-1/outputs/feature_selection.csv",
+    "week-1/outputs/figures/"
+  ]
+}

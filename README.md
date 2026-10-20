@@ -18,6 +18,31 @@ This repository contains completed, runnable deliverables for the four-week Pyth
 
 Each Word report includes its own **200+ word submission description**. The descriptions are also provided together in `reports/SUBMISSION_DESCRIPTIONS.md` for copying into the submission form. `docs/python_ml_fundamentals.md` summarizes the Python, NumPy, Pandas, and ML concepts used.
 
+## Week 1 deliverable folder
+
+`week-1/` is a self-contained, submission-ready copy of the Week 1 work. It contains the
+reported dataset, a nine-stage preprocessing pipeline, a 64-cell teaching notebook on
+Python, NumPy and Pandas, the step-by-step documentation, and the generated Word report.
+
+| Item | Path |
+|---|---|
+| Word report | `week-1/reports/Week_1_Python_ML_Data_Preprocessing_Report.docx` |
+| Submission description (307 words) | `week-1/docs/SUBMISSION_DESCRIPTION.md` |
+| Documented preprocessing steps | `week-1/docs/preprocessing_steps.md` |
+| Teaching notebook | `week-1/notebooks/week1_python_ml_preprocessing.ipynb` |
+| Pipeline source | `week-1/src/preprocess.py` |
+| Generated tables and figures | `week-1/outputs/` |
+
+```bash
+python week-1/src/preprocess.py             # regenerate all Week 1 artifacts
+python week-1/src/make_pipeline_diagram.py
+python week-1/docs/build_report.py          # rebuild the Week 1 report from those artifacts
+```
+
+The `week-1/` folder is standalone: it has its own dataset copy, dependency list and
+ignore rules, so it can be submitted on its own. The root-level `src/yuva_ml/` package
+remains the source of truth for the Week 2–4 work.
+
 ## Run locally
 
 Requires Python 3.11 or newer.

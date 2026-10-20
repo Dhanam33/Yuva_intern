@@ -1,0 +1,9 @@
+check,result,action
+Duplicate rows,0,None required
+Duplicate customer IDs,0,None required
+Missing feature cells,562,Impute per column type
+Leading/trailing whitespace cells,0,Trim text values
+Empty-string cells,0,Treat as missing
+Impossible negative numeric cells,0,Treat as missing
+Invalid senior_citizen codes,0,Treat as missing
+"Target values outside {No, Yes}",0,Stop: target must be valid

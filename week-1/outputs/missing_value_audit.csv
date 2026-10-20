@@ -1,0 +1,12 @@
+feature,kind,dtype,missing_count,missing_percent,strategy,fill_value
+support_tickets,numeric,float64,89,4.94,Median imputation + missing indicator,1.0
+monthly_charges,numeric,float64,78,4.33,Median imputation + missing indicator,64.34
+tenure_months,numeric,float64,77,4.28,Median imputation + missing indicator,37.0
+total_charges,numeric,float64,74,4.11,Median imputation + missing indicator,2020.29
+payment_method,categorical,str,52,2.89,Most-frequent (mode) imputation,Bank transfer
+contract,categorical,str,47,2.61,Most-frequent (mode) imputation,Month-to-month
+internet_service,categorical,str,42,2.33,Most-frequent (mode) imputation,Fiber optic
+paperless_billing,categorical,str,36,2.0,Most-frequent (mode) imputation,Yes
+dependents,categorical,str,34,1.89,Most-frequent (mode) imputation,No
+partner,categorical,str,33,1.83,Most-frequent (mode) imputation,Yes
+senior_citizen,numeric,float64,0,0.0,No action required,-

@@ -1,0 +1,7 @@
+feature,levels,categories,encoded_columns
+contract,3,"Month-to-month, One year, Two year",3
+internet_service,3,"DSL, Fiber optic, No",3
+payment_method,4,"Bank transfer, Credit card, Electronic check, Mailed check",4
+paperless_billing,2,"No, Yes",2
+partner,2,"No, Yes",2
+dependents,2,"No, Yes",2
