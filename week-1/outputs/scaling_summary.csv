@@ -1,0 +1,6 @@
+feature,mean_before,std_before,mean_after,std_after
+tenure_months,37.1933,17.4341,-0.0,1.0003
+monthly_charges,60.7274,21.8158,-0.0,1.0003
+total_charges,2227.5773,1372.3517,-0.0,1.0003
+support_tickets,1.0018,1.0494,0.0,1.0003
+senior_citizen,0.1772,0.382,0.0,1.0003

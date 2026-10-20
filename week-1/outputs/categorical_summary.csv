@@ -1,0 +1,23 @@
+feature,level,count,percent
+contract,Month-to-month,939,52.17
+contract,One year,454,25.22
+contract,Two year,360,20.0
+contract,(missing),47,2.61
+internet_service,Fiber optic,847,47.06
+internet_service,DSL,608,33.78
+internet_service,No,303,16.83
+internet_service,(missing),42,2.33
+payment_method,Bank transfer,508,28.22
+payment_method,Electronic check,502,27.89
+payment_method,Credit card,392,21.78
+payment_method,Mailed check,346,19.22
+payment_method,(missing),52,2.89
+paperless_billing,Yes,1263,70.17
+paperless_billing,No,501,27.83
+paperless_billing,(missing),36,2.0
+partner,Yes,887,49.28
+partner,No,880,48.89
+partner,(missing),33,1.83
+dependents,No,1218,67.67
+dependents,Yes,548,30.44
+dependents,(missing),34,1.89

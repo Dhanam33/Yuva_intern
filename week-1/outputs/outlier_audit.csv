@@ -1,0 +1,6 @@
+feature,q1,q3,iqr,lower_fence,upper_fence,outlier_count,outlier_percent,action
+tenure_months,23.0,52.0,29.0,-20.5,95.5,0,0.0,No outliers
+monthly_charges,47.78,78.06,30.28,2.35,123.48,0,0.0,No outliers
+total_charges,1082.97,3205.17,2122.2,-2100.32,6388.46,2,0.11,Retained
+support_tickets,0.0,2.0,2.0,-3.0,5.0,1,0.06,Retained
+senior_citizen,0.0,0.0,0.0,-,-,0,0.0,Not assessed (binary 0/1 flag)
