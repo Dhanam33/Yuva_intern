@@ -1,0 +1,22 @@
+feature,importance
+monthly_charges,0.23643943196509395
+tenure_months,0.12199275803218566
+total_charges,0.10853656057304857
+contract_Month-to-month,0.10602484793084412
+internet_service_Fiber optic,0.088166877964526
+contract_Two year,0.07518604916899721
+support_tickets,0.049656214642095554
+internet_service_No,0.03128309304983255
+contract_One year,0.02793583607796929
+internet_service_DSL,0.026912565698364407
+partner_Yes,0.014637374404856808
+payment_method_Electronic check,0.014265636394745072
+partner_No,0.013067961071413729
+payment_method_Credit card,0.01293991562707554
+payment_method_Bank transfer,0.012511943727545997
+dependents_No,0.01208021597838648
+dependents_Yes,0.010878450836325227
+paperless_billing_No,0.010677921024530081
+paperless_billing_Yes,0.010541188467039246
+senior_citizen,0.00822902445416416
+payment_method_Mailed check,0.00803613291096039
