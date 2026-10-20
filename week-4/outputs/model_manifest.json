@@ -1,0 +1,20 @@
+{
+  "model_name": "customer-churn-classifier",
+  "model_version": "4.0.0",
+  "generated_at": "2026-10-20T13:39:26+00:00",
+  "files": [
+    {
+      "path": "customer_churn_pipeline.joblib",
+      "bytes": 5866,
+      "sha256": "3607d6f922ae5b7189e065f0ae65e34253cc9ebb4ac4b26d6bbc6cf158137762"
+    },
+    {
+      "path": "customer_churn_pipeline.pkl",
+      "bytes": 3789,
+      "sha256": "fc259f2bc7481187d918977771cf1f13f2b80acb784c7347a364a0ae1306a18b"
+    }
+  ],
+  "load_time_ms": 1.078,
+  "round_trip_identical": true,
+  "max_abs_delta": 0.0
+}

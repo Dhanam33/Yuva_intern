@@ -1,0 +1,18 @@
+{
+  "cold_start_ms": 1356.1,
+  "single_explained_p50_ms": 13.316,
+  "single_plain_p50_ms": 7.635,
+  "single_explained_p95_ms": 18.546,
+  "single_plain_p95_ms": 9.544,
+  "explanation_cost_ms": 5.681,
+  "model_only_p50_ms": 4.608,
+  "http_overhead_ms": 3.027,
+  "single_rps": 71.1,
+  "batch_rows_per_s": 10786.5,
+  "batch_ms_per_row": 0.092,
+  "batch_explained_rows_per_s": 185.8,
+  "single_ms_per_row": 13.316,
+  "batch_size": 100,
+  "requests": 300,
+  "batch_speedup": 144.7
+}

@@ -101,9 +101,40 @@ improving the clustering at all. Part B reports tuning honestly: Logistic Regres
 0.001 ROC-AUC across five values of C, nested CV confirmed the tuned score was not inflated
 (+0.001), and the final held-out scores were 0.768 ROC-AUC with 0.656 recall.
 
+## Week 4 deliverable folder
+
+`week-4/` is the capstone: the churn classifier from Weeks 2–3, serialised and deployed as
+a FastAPI service with a browser demo, 18 contract tests, a model card and a measured
+latency budget.
+
+| Item | Path |
+|---|---|
+| Word report | `week-4/reports/Week_4_AI_Project_Deployment_Report.docx` |
+| Presentation (14 slides) | `week-4/reports/Week_4_Capstone_Presentation.pptx` |
+| Submission description (263 words) | `week-4/docs/SUBMISSION_DESCRIPTION.md` |
+| Model card | `week-4/docs/model_card.md` |
+| API reference | `week-4/docs/api_reference.md` |
+| Service source | `week-4/src/service.py` |
+| Serialised artifact | `week-4/outputs/model/customer_churn_pipeline.joblib` |
+
+```bash
+python week-4/src/train.py          # fit, evaluate, serialise
+python week-4/src/benchmark.py      # measure the running service
+python week-4/src/make_figures.py   # 10 figures
+python week-4/docs/build_report.py  # rebuild the report
+python week-4/docs/build_deck.py    # rebuild the presentation
+cd week-4/src && uvicorn service:app --host 0.0.0.0 --port 8000
+```
+
+**Headline results.** A single prediction takes 12.5 ms with an explanation and 7.4 ms
+without; the model itself is only 4.7 ms of that. Benchmarking found a real defect — the
+first batch endpoint looped over rows and reached 92 rows per second, and vectorising it
+took throughput to 10,931 rows per second. The artifact reproduces the Week 3 evaluation
+exactly, so the bytes being served are provably the model that was measured.
+
 The `week-1/`, `week-2/` and `week-3/` folders are standalone: each has its own dataset copy,
 dependency list and ignore rules, so any of them can be submitted on its own. The root-level
-`src/yuva_ml/` package remains the source of truth for the shared Week 4 work.
+`src/yuva_ml/` package remains the source of truth for the shared Week 3 work.
 
 ## Run locally
 

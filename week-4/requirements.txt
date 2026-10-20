@@ -1,0 +1,24 @@
+# Training and evaluation
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
+joblib>=1.3
+
+# Service
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+httpx>=0.27
+
+# Tests
+pytest>=8.0
+
+# Documents and slides
+python-docx>=1.1
+python-pptx>=0.6.23
+
+# Notebook only
+nbformat>=5.9
+nbclient>=0.9
+ipykernel>=6.29
