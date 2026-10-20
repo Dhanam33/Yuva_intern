@@ -68,9 +68,42 @@ models — because balanced class weights deliberately trade accuracy for recall
 Regression predicts monthly charges with R² 0.818 and MAE 7.59, with `total_charges`
 excluded to prevent leakage.
 
-The `week-1/` and `week-2/` folders are standalone: each has its own dataset copy,
-dependency list and ignore rules, so either can be submitted on its own. The root-level
-`src/yuva_ml/` package remains the source of truth for the shared Week 3–4 work.
+## Week 3 deliverable folder
+
+`week-3/` covers unsupervised learning and model evaluation. K-Means and agglomerative
+clustering are applied to the same customer data, with PCA used to investigate
+dimensionality reduction, and a tuned classifier is evaluated with the full metric set the
+brief names.
+
+| Item | Path |
+|---|---|
+| Word report | `week-3/reports/Week_3_Unsupervised_Learning_Model_Evaluation_Report.docx` |
+| Submission description (230 words) | `week-3/docs/SUBMISSION_DESCRIPTION.md` |
+| Metric-by-metric analysis | `week-3/docs/clustering_and_evaluation.md` |
+| Teaching notebook | `week-3/notebooks/week3_unsupervised_evaluation.ipynb` |
+| Analysis source | `week-3/src/run_analysis.py` |
+| Generated tables and figures | `week-3/outputs/` |
+
+```bash
+python week-3/src/run_analysis.py          # clustering, PCA, tuning, nested CV
+python week-3/src/make_figures.py          # builds the 14 figures
+python week-3/docs/build_report.py         # rebuilds the Week 3 report
+```
+
+**Headline results.** Two independent clustering algorithms recover the same three customer
+segments (ARI 0.732) — a long-tenure high-spend group, a short-tenure low-spend group, and a
+senior segment K-Means found without being told the column existed. But those segments carry
+almost no information about churn (ARI 0.015), and the churn rate varies by only 9 percentage
+points across them. The report also documents two ways unsupervised output is misread: single
+linkage scores the highest silhouette in the study (0.294) by producing a one-customer
+cluster, and projecting to two dimensions inflates silhouette from 0.135 to 0.389 without
+improving the clustering at all. Part B reports tuning honestly: Logistic Regression gained
+0.001 ROC-AUC across five values of C, nested CV confirmed the tuned score was not inflated
+(+0.001), and the final held-out scores were 0.768 ROC-AUC with 0.656 recall.
+
+The `week-1/`, `week-2/` and `week-3/` folders are standalone: each has its own dataset copy,
+dependency list and ignore rules, so any of them can be submitted on its own. The root-level
+`src/yuva_ml/` package remains the source of truth for the shared Week 4 work.
 
 ## Run locally
 

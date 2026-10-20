@@ -1,0 +1,4 @@
+pair,ari,ami,note
+K-Means vs Ward,0.7315758572963428,0.7331080167194407,agreement between the two clusterings
+K-Means vs churn,0.014869594304266005,0.005958403772336543,agreement between clusters and the label
+Ward vs churn,0.009660715614495108,0.0024403571998327517,agreement between clusters and the label
