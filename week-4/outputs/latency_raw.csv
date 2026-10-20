@@ -1,0 +1,901 @@
+scenario,latency_ms
+predict + explanation,18.63488700007565
+predict + explanation,18.00993099993775
+predict + explanation,18.27593699999852
+predict + explanation,19.532536000042455
+predict + explanation,16.045800000028976
+predict + explanation,16.613088000099197
+predict + explanation,17.162139999982173
+predict + explanation,15.571931000067707
+predict + explanation,14.959124999904816
+predict + explanation,14.253514999950312
+predict + explanation,13.63955600004374
+predict + explanation,14.303371999972114
+predict + explanation,17.47930700003053
+predict + explanation,14.282035000064752
+predict + explanation,15.969572000017251
+predict + explanation,18.824933000018973
+predict + explanation,14.13165199994637
+predict + explanation,12.764966000077038
+predict + explanation,12.489849000075992
+predict + explanation,12.463231000083397
+predict + explanation,12.178854000012507
+predict + explanation,13.128582000035749
+predict + explanation,13.531079000017598
+predict + explanation,12.918924000018706
+predict + explanation,13.30918600001496
+predict + explanation,13.083673000096496
+predict + explanation,13.307283000017378
+predict + explanation,12.926081000045997
+predict + explanation,13.298581000071863
+predict + explanation,12.472946000002594
+predict + explanation,13.042372999962026
+predict + explanation,12.297919000047841
+predict + explanation,12.164467999923545
+predict + explanation,13.035835999971823
+predict + explanation,12.835801999926844
+predict + explanation,12.542053999936797
+predict + explanation,12.98625100002937
+predict + explanation,13.044063999927857
+predict + explanation,13.024350000023333
+predict + explanation,11.97811500003354
+predict + explanation,12.202386000012666
+predict + explanation,13.750851999930092
+predict + explanation,13.237058000072466
+predict + explanation,13.174616000014794
+predict + explanation,13.122687999953087
+predict + explanation,17.617433999930654
+predict + explanation,18.545902000028036
+predict + explanation,17.103349999956663
+predict + explanation,16.775102999986302
+predict + explanation,12.686064000035913
+predict + explanation,12.86525700004404
+predict + explanation,12.820372999954088
+predict + explanation,12.844932999996672
+predict + explanation,12.836621000019477
+predict + explanation,12.663105999990876
+predict + explanation,13.594067999974868
+predict + explanation,13.916263000055551
+predict + explanation,12.739958999986811
+predict + explanation,12.968452999984947
+predict + explanation,13.523825000106626
+predict + explanation,13.041981000014857
+predict + explanation,12.962694000066222
+predict + explanation,12.794959000075323
+predict + explanation,16.306028000030892
+predict + explanation,16.71958600002199
+predict + explanation,12.720581000053244
+predict + explanation,12.838381000051413
+predict + explanation,16.394850000096994
+predict + explanation,14.856650999945487
+predict + explanation,12.98542200004249
+predict + explanation,13.010076000000481
+predict + explanation,13.530482000078337
+predict + explanation,13.25627500000337
+predict + explanation,12.974738999901092
+predict + explanation,13.403746999983923
+predict + explanation,12.913397999909648
+predict + explanation,13.271786000018437
+predict + explanation,13.33402099999148
+predict + explanation,13.709596000012425
+predict + explanation,13.360312000031627
+predict + explanation,13.037657000040781
+predict + explanation,13.874659999942196
+predict + explanation,13.05154500005301
+predict + explanation,13.400786999909542
+predict + explanation,14.207491999968624
+predict + explanation,13.723329999947964
+predict + explanation,13.264995999975326
+predict + explanation,13.754771000094479
+predict + explanation,13.629688999913014
+predict + explanation,13.334890999999516
+predict + explanation,13.593313999990642
+predict + explanation,14.187743999968916
+predict + explanation,13.249496999947041
+predict + explanation,14.211878999958572
+predict + explanation,12.922365999997965
+predict + explanation,14.504132999945796
+predict + explanation,13.999542999954429
+predict + explanation,13.388361000011173
+predict + explanation,12.715909000007741
+predict + explanation,13.06815700002062
+predict + explanation,12.746805999995559
+predict + explanation,12.908409000033316
+predict + explanation,12.994529000025068
+predict + explanation,14.056270000082804
+predict + explanation,13.772915000004105
+predict + explanation,13.682788999972217
+predict + explanation,12.54424499995821
+predict + explanation,13.308394999967277
+predict + explanation,12.775333000035971
+predict + explanation,13.884405999988303
+predict + explanation,13.86671899990688
+predict + explanation,13.077717999976812
+predict + explanation,16.06317199991736
+predict + explanation,22.137728000075185
+predict + explanation,15.461041999969893
+predict + explanation,16.578008000010414
+predict + explanation,13.934405000100014
+predict + explanation,13.356014000009964
+predict + explanation,15.949141999954008
+predict + explanation,15.508435000015197
+predict + explanation,14.418715000033444
+predict + explanation,15.201691000015671
+predict + explanation,15.561189999971248
+predict + explanation,15.79607799999394
+predict + explanation,16.074398000000656
+predict + explanation,15.156108000041968
+predict + explanation,15.510405999975774
+predict + explanation,15.265067999962412
+predict + explanation,15.057726000009097
+predict + explanation,15.144235999969169
+predict + explanation,14.55146099999638
+predict + explanation,16.131954000002224
+predict + explanation,14.743362999979581
+predict + explanation,13.204740999981368
+predict + explanation,13.140498999973715
+predict + explanation,13.036396999950739
+predict + explanation,13.93286299992269
+predict + explanation,14.67418100003215
+predict + explanation,13.39405299995633
+predict + explanation,14.13786299997355
+predict + explanation,12.654219000069133
+predict + explanation,12.814282000022104
+predict + explanation,12.6475859999573
+predict + explanation,13.28241999999591
+predict + explanation,12.823649999972986
+predict + explanation,13.199828000097114
+predict + explanation,14.60178199999973
+predict + explanation,13.043422000009741
+predict + explanation,13.241793000020152
+predict + explanation,15.938589000029424
+predict + explanation,15.4523749999953
+predict + explanation,15.617347999977937
+predict + explanation,15.602796999928614
+predict + explanation,14.399906999983614
+predict + explanation,13.618961000020136
+predict + explanation,13.231715999950211
+predict + explanation,12.899628000013763
+predict + explanation,12.535033000062867
+predict + explanation,12.785078999968391
+predict + explanation,13.096622000034586
+predict + explanation,13.815681999972185
+predict + explanation,13.219795999930284
+predict + explanation,20.25550700000167
+predict + explanation,17.467249999981505
+predict + explanation,20.802975000037804
+predict + explanation,15.062369000020226
+predict + explanation,21.139322999943033
+predict + explanation,17.725751000057244
+predict + explanation,20.707738000055542
+predict + explanation,25.094548000083705
+predict + explanation,23.432631999980913
+predict + explanation,20.36505199998828
+predict + explanation,19.522198999993634
+predict + explanation,15.491050000036921
+predict + explanation,15.798981999978423
+predict + explanation,15.182439000000159
+predict + explanation,14.913960000058069
+predict + explanation,15.166955000040616
+predict + explanation,15.326403000017308
+predict + explanation,15.25408299994524
+predict + explanation,15.095317000032082
+predict + explanation,15.158627999994678
+predict + explanation,15.005977999976494
+predict + explanation,14.224692999960098
+predict + explanation,13.917055999968397
+predict + explanation,13.550656000006711
+predict + explanation,13.888287000099808
+predict + explanation,15.335311000058027
+predict + explanation,13.474519000055807
+predict + explanation,13.327693999940493
+predict + explanation,13.698699999963537
+predict + explanation,13.353500999983225
+predict + explanation,13.318878999939443
+predict + explanation,13.00388100003147
+predict + explanation,12.808439999957955
+predict + explanation,13.312551000012718
+predict + explanation,13.154009000004407
+predict + explanation,12.797762999980478
+predict + explanation,13.166162999937114
+predict + explanation,12.638622000054056
+predict + explanation,12.71981100001085
+predict + explanation,13.405409000029067
+predict + explanation,12.675883000042631
+predict + explanation,13.254436000011083
+predict + explanation,12.72254699995301
+predict + explanation,12.612633999992795
+predict + explanation,12.640249000014592
+predict + explanation,12.656247999984771
+predict + explanation,12.594215000035547
+predict + explanation,13.232580000021699
+predict + explanation,12.58732400003737
+predict + explanation,12.654976000021634
+predict + explanation,13.07855400000335
+predict + explanation,13.018256999998812
+predict + explanation,12.947760999963975
+predict + explanation,13.061538999977529
+predict + explanation,12.952662000088822
+predict + explanation,12.759001999938846
+predict + explanation,13.044570000033673
+predict + explanation,12.580429999957232
+predict + explanation,12.587721999921087
+predict + explanation,13.290273000052366
+predict + explanation,12.458089000006112
+predict + explanation,12.642612000036024
+predict + explanation,12.85602200005087
+predict + explanation,13.119734000042627
+predict + explanation,12.735405000057654
+predict + explanation,12.775352000062412
+predict + explanation,12.835719000008794
+predict + explanation,12.31239900005221
+predict + explanation,12.352962000022671
+predict + explanation,12.378754999986086
+predict + explanation,14.813736999940375
+predict + explanation,14.87433499994495
+predict + explanation,13.11954200002674
+predict + explanation,13.365283999974054
+predict + explanation,12.608614000100715
+predict + explanation,19.192948999943837
+predict + explanation,18.567774999951325
+predict + explanation,18.783003999942594
+predict + explanation,13.648860000103014
+predict + explanation,15.466854000010244
+predict + explanation,14.785428999971373
+predict + explanation,14.497997000034957
+predict + explanation,13.748558999964189
+predict + explanation,14.12371499998244
+predict + explanation,13.527575000011893
+predict + explanation,13.893444000018462
+predict + explanation,12.520874999950138
+predict + explanation,13.636625000003733
+predict + explanation,14.912540999944213
+predict + explanation,13.859623000030297
+predict + explanation,12.688085000036153
+predict + explanation,12.377004000086345
+predict + explanation,11.845087999972748
+predict + explanation,12.853071999984422
+predict + explanation,13.092569000036747
+predict + explanation,13.658144999908473
+predict + explanation,13.64571299995987
+predict + explanation,12.515624999991815
+predict + explanation,14.425967999954992
+predict + explanation,12.589876999982152
+predict + explanation,12.642303000006905
+predict + explanation,13.20122899994658
+predict + explanation,14.923781999982566
+predict + explanation,14.707575999977962
+predict + explanation,13.29597799997373
+predict + explanation,13.181324000015593
+predict + explanation,13.218241999993552
+predict + explanation,12.840959999948609
+predict + explanation,12.520180000024084
+predict + explanation,12.416343000040797
+predict + explanation,13.755239000033725
+predict + explanation,14.065411000046879
+predict + explanation,12.749154000061935
+predict + explanation,13.685915000110072
+predict + explanation,12.831187999950089
+predict + explanation,13.45565099995838
+predict + explanation,12.66893699994398
+predict + explanation,12.656150999987403
+predict + explanation,12.170341999990342
+predict + explanation,12.91645999992852
+predict + explanation,13.79936099999668
+predict + explanation,12.89496300000792
+predict + explanation,12.68372700008058
+predict + explanation,13.119051999979092
+predict + explanation,13.150894999967022
+predict + explanation,13.788604999945164
+predict + explanation,13.43381699996371
+predict + explanation,13.182021000034183
+predict + explanation,13.101218999963749
+predict + explanation,14.071034999915355
+predict + explanation,14.301225000053819
+predict + explanation,14.366945000006126
+predict + explanation,12.786632000029385
+predict + explanation,12.863979000030668
+predict + explanation,13.012086000003364
+predict + explanation,13.259858999958851
+predict + explanation,13.11286400004974
+predict + explanation,12.88575099999889
+"predict, no explanation",8.320721000018239
+"predict, no explanation",7.469986000046447
+"predict, no explanation",8.099491000052694
+"predict, no explanation",7.522520999941662
+"predict, no explanation",7.781397000030665
+"predict, no explanation",7.967729999904805
+"predict, no explanation",7.506697999929202
+"predict, no explanation",7.037774999957946
+"predict, no explanation",7.587655999941489
+"predict, no explanation",7.21465900005569
+"predict, no explanation",7.220455000037873
+"predict, no explanation",7.267107000075157
+"predict, no explanation",7.056863999991947
+"predict, no explanation",7.334336000099029
+"predict, no explanation",7.900936000055481
+"predict, no explanation",7.539240000028258
+"predict, no explanation",7.49962100007906
+"predict, no explanation",8.857384000066304
+"predict, no explanation",7.588257000065823
+"predict, no explanation",10.509611999964363
+"predict, no explanation",13.067974000023241
+"predict, no explanation",7.519317999935993
+"predict, no explanation",7.457004000002598
+"predict, no explanation",8.07969499999217
+"predict, no explanation",7.266996999987896
+"predict, no explanation",7.376425999950698
+"predict, no explanation",7.274131000031048
+"predict, no explanation",9.32071999989148
+"predict, no explanation",10.010526000087339
+"predict, no explanation",10.449098999970374
+"predict, no explanation",10.52898400007507
+"predict, no explanation",9.958771000015076
+"predict, no explanation",10.66474999993261
+"predict, no explanation",10.331423000025097
+"predict, no explanation",8.258863000037309
+"predict, no explanation",8.173755000029814
+"predict, no explanation",7.132294000030015
+"predict, no explanation",7.34716199997365
+"predict, no explanation",59.77519600003234
+"predict, no explanation",8.969130999957997
+"predict, no explanation",7.797631000016736
+"predict, no explanation",7.850073999975393
+"predict, no explanation",7.375655000032566
+"predict, no explanation",7.343401000071026
+"predict, no explanation",7.6624920000085694
+"predict, no explanation",7.3826290000624795
+"predict, no explanation",7.5006800000210205
+"predict, no explanation",7.354351999993014
+"predict, no explanation",8.787533000031544
+"predict, no explanation",6.821245000082854
+"predict, no explanation",7.832271000097535
+"predict, no explanation",7.3046250000743385
+"predict, no explanation",7.388370999933613
+"predict, no explanation",7.513075999895591
+"predict, no explanation",8.090168999956404
+"predict, no explanation",7.660293999947498
+"predict, no explanation",7.9400600000099075
+"predict, no explanation",7.970093999915662
+"predict, no explanation",6.850538999970013
+"predict, no explanation",7.790329000044949
+"predict, no explanation",7.450025000025562
+"predict, no explanation",7.724177000000054
+"predict, no explanation",8.315828000036163
+"predict, no explanation",7.679855999981555
+"predict, no explanation",7.106906999979401
+"predict, no explanation",12.632961000008436
+"predict, no explanation",7.548020999934124
+"predict, no explanation",7.5046189999739
+"predict, no explanation",8.124829000053069
+"predict, no explanation",7.496244000094521
+"predict, no explanation",8.013593999976365
+"predict, no explanation",7.506003999992572
+"predict, no explanation",8.472030999996605
+"predict, no explanation",7.117401000073187
+"predict, no explanation",7.516258000009657
+"predict, no explanation",7.247505999998793
+"predict, no explanation",7.6819330000716946
+"predict, no explanation",7.914121999988311
+"predict, no explanation",7.1460629999364755
+"predict, no explanation",9.639259999971728
+"predict, no explanation",8.516751000001932
+"predict, no explanation",7.837419999987105
+"predict, no explanation",8.30508399997143
+"predict, no explanation",9.74731700000575
+"predict, no explanation",7.72082700007104
+"predict, no explanation",8.114406000004237
+"predict, no explanation",7.356110000046101
+"predict, no explanation",7.198511999945367
+"predict, no explanation",8.906842999977016
+"predict, no explanation",7.662150999976802
+"predict, no explanation",8.221079999998437
+"predict, no explanation",8.183477000102357
+"predict, no explanation",7.597397000040473
+"predict, no explanation",7.345498999939082
+"predict, no explanation",7.595816999923954
+"predict, no explanation",7.293459000038638
+"predict, no explanation",7.585691000031147
+"predict, no explanation",7.790686000021196
+"predict, no explanation",7.831076999991637
+"predict, no explanation",7.335603000001356
+"predict, no explanation",8.020285000043259
+"predict, no explanation",8.893857999964894
+"predict, no explanation",8.716738999964946
+"predict, no explanation",7.4535640000021885
+"predict, no explanation",8.853849999923114
+"predict, no explanation",8.21678099998735
+"predict, no explanation",8.011731999999938
+"predict, no explanation",8.465054999987842
+"predict, no explanation",8.909827000024961
+"predict, no explanation",7.875044000002163
+"predict, no explanation",8.433082000010472
+"predict, no explanation",8.172974999979488
+"predict, no explanation",7.593887999973958
+"predict, no explanation",7.609008999907019
+"predict, no explanation",9.544468999933997
+"predict, no explanation",7.52930600003765
+"predict, no explanation",7.294410999975298
+"predict, no explanation",7.261838000090393
+"predict, no explanation",7.718881000073452
+"predict, no explanation",7.547327999986919
+"predict, no explanation",7.665701000064473
+"predict, no explanation",7.191744000010658
+"predict, no explanation",7.42289200002233
+"predict, no explanation",7.475124999928084
+"predict, no explanation",7.517575999941073
+"predict, no explanation",7.830678000004809
+"predict, no explanation",7.5802740000199265
+"predict, no explanation",8.284510000066803
+"predict, no explanation",7.525995999912993
+"predict, no explanation",7.161466000070504
+"predict, no explanation",7.512983000083295
+"predict, no explanation",8.225011999911658
+"predict, no explanation",7.602573000099255
+"predict, no explanation",7.329045999995287
+"predict, no explanation",7.6953400000547845
+"predict, no explanation",7.490682000025117
+"predict, no explanation",7.479593999960343
+"predict, no explanation",7.556358999977419
+"predict, no explanation",7.1825429999989865
+"predict, no explanation",7.327522000082354
+"predict, no explanation",7.506282999997893
+"predict, no explanation",8.163947000070948
+"predict, no explanation",7.231934999936129
+"predict, no explanation",7.54331899997851
+"predict, no explanation",8.092795999914415
+"predict, no explanation",7.915880000041398
+"predict, no explanation",7.7948829999741065
+"predict, no explanation",7.250957999985985
+"predict, no explanation",7.340943000031075
+"predict, no explanation",7.611940000060713
+"predict, no explanation",7.465235000040593
+"predict, no explanation",7.189400000015667
+"predict, no explanation",7.880688000000191
+"predict, no explanation",7.920627000089553
+"predict, no explanation",7.314636999922186
+"predict, no explanation",8.059328999934223
+"predict, no explanation",7.612324999968223
+"predict, no explanation",7.656887000052848
+"predict, no explanation",7.720435000010184
+"predict, no explanation",7.386897000060344
+"predict, no explanation",7.349820000058571
+"predict, no explanation",7.847901999980422
+"predict, no explanation",7.3768180000115535
+"predict, no explanation",6.970080999963102
+"predict, no explanation",7.369401999994807
+"predict, no explanation",7.082439999976486
+"predict, no explanation",7.15016700007709
+"predict, no explanation",7.763335999925403
+"predict, no explanation",7.380051999916759
+"predict, no explanation",7.386542999938683
+"predict, no explanation",7.666560000075151
+"predict, no explanation",7.0624329999873225
+"predict, no explanation",7.32783399996606
+"predict, no explanation",7.799349999913829
+"predict, no explanation",7.133709999948223
+"predict, no explanation",7.208550999962426
+"predict, no explanation",7.413765000023886
+"predict, no explanation",7.3635029999650214
+"predict, no explanation",7.248852999964583
+"predict, no explanation",7.524407999994764
+"predict, no explanation",7.398011000077531
+"predict, no explanation",7.001341999966826
+"predict, no explanation",7.92466800010061
+"predict, no explanation",7.808497000041825
+"predict, no explanation",7.211159000007683
+"predict, no explanation",7.646373000056883
+"predict, no explanation",7.274043000052188
+"predict, no explanation",7.215301999963231
+"predict, no explanation",8.31399200001215
+"predict, no explanation",7.378002999985256
+"predict, no explanation",8.378251999943132
+"predict, no explanation",7.651380999959656
+"predict, no explanation",7.635450999941895
+"predict, no explanation",7.747206999965783
+"predict, no explanation",7.587843999999677
+"predict, no explanation",7.140518000028351
+"predict, no explanation",7.629182000073342
+"predict, no explanation",7.992636999915703
+"predict, no explanation",7.592137999949955
+"predict, no explanation",7.417795000037586
+"predict, no explanation",7.871938999983286
+"predict, no explanation",7.556012999998529
+"predict, no explanation",7.645896999974866
+"predict, no explanation",8.041853999998239
+"predict, no explanation",7.990674000097897
+"predict, no explanation",7.64864600000692
+"predict, no explanation",8.287202000019533
+"predict, no explanation",7.456606000005195
+"predict, no explanation",7.403717000102006
+"predict, no explanation",8.187895999981265
+"predict, no explanation",7.984573000044293
+"predict, no explanation",7.786077999980989
+"predict, no explanation",8.082443999910538
+"predict, no explanation",7.34479300001567
+"predict, no explanation",11.933189000046696
+"predict, no explanation",8.870462999993833
+"predict, no explanation",7.539812000004531
+"predict, no explanation",7.199198999956025
+"predict, no explanation",7.772273000000496
+"predict, no explanation",7.307919000027141
+"predict, no explanation",7.207492000020466
+"predict, no explanation",7.925760000034643
+"predict, no explanation",8.12834600003498
+"predict, no explanation",8.437844000013683
+"predict, no explanation",7.854061999978512
+"predict, no explanation",7.128265999995165
+"predict, no explanation",7.690227000011873
+"predict, no explanation",9.563565000007657
+"predict, no explanation",8.50550799998473
+"predict, no explanation",8.087624000040705
+"predict, no explanation",8.014092000053097
+"predict, no explanation",7.558674999927462
+"predict, no explanation",7.733591000032902
+"predict, no explanation",7.9544650000116235
+"predict, no explanation",7.272779000004448
+"predict, no explanation",7.43771400004789
+"predict, no explanation",7.558136999932685
+"predict, no explanation",7.510299000045961
+"predict, no explanation",7.393044000082227
+"predict, no explanation",7.642736000093464
+"predict, no explanation",7.206833999930495
+"predict, no explanation",7.356705999995938
+"predict, no explanation",7.587008999962563
+"predict, no explanation",8.592464999992444
+"predict, no explanation",9.00011800001721
+"predict, no explanation",8.934246999956486
+"predict, no explanation",7.3002090000500175
+"predict, no explanation",7.340978000001996
+"predict, no explanation",7.984620000001996
+"predict, no explanation",9.38404900000478
+"predict, no explanation",8.41839899999286
+"predict, no explanation",9.801736999975219
+"predict, no explanation",7.943674999978612
+"predict, no explanation",7.8444859999535765
+"predict, no explanation",8.180657000025349
+"predict, no explanation",8.068217000072764
+"predict, no explanation",7.239476999984618
+"predict, no explanation",7.565188000057788
+"predict, no explanation",7.699319000039395
+"predict, no explanation",7.6448689999324415
+"predict, no explanation",7.7814449999777935
+"predict, no explanation",7.533328000022266
+"predict, no explanation",7.194612000034795
+"predict, no explanation",7.788641000047392
+"predict, no explanation",7.4261780000597355
+"predict, no explanation",7.610923000015646
+"predict, no explanation",8.169345999931465
+"predict, no explanation",7.694163000110166
+"predict, no explanation",7.601385000043592
+"predict, no explanation",7.505498000000443
+"predict, no explanation",7.424022000009245
+"predict, no explanation",7.171835999997711
+"predict, no explanation",7.98332300007587
+"predict, no explanation",7.414602000039849
+"predict, no explanation",7.204945000012231
+"predict, no explanation",9.40319599999384
+"predict, no explanation",8.570158999987143
+"predict, no explanation",7.635365000055572
+"predict, no explanation",8.239314000093145
+"predict, no explanation",7.226672000001599
+"predict, no explanation",7.182783000075688
+"predict, no explanation",7.6256700000385536
+"predict, no explanation",8.247332999985701
+"predict, no explanation",7.289783000032912
+"predict, no explanation",8.287902000006397
+"predict, no explanation",8.17783899992719
+"predict, no explanation",7.722880999949666
+"predict, no explanation",8.376559999987876
+"predict, no explanation",8.362969999893721
+"predict, no explanation",8.59744399997453
+"predict, no explanation",8.059259999981805
+"predict, no explanation",8.187367000004997
+"predict, no explanation",7.3381180000069435
+"predict, no explanation",8.510801000056745
+"predict, no explanation",7.586408999941341
+"predict, no explanation",7.7817019999884
+"predict, no explanation",7.881499999939479
+"predict, no explanation",7.231625000031272
+"predict, no explanation",7.324139999923318
+"predict, no explanation",7.276242000102684
+model only,5.32652300000791
+model only,4.893932999948447
+model only,4.962140999964504
+model only,4.5307039999897825
+model only,4.67805200003113
+model only,4.6274180000409615
+model only,4.562519999922188
+model only,4.536073000053875
+model only,4.5697360000076515
+model only,4.625487999987854
+model only,4.896554000083597
+model only,4.827825000006669
+model only,4.691333999971903
+model only,4.555088999950385
+model only,4.5665249999728985
+model only,4.3847160000041185
+model only,4.4522910000068805
+model only,4.653609000001779
+model only,4.4580369999494
+model only,4.439652999963073
+model only,4.410387999996601
+model only,4.349189999970804
+model only,4.424640000024738
+model only,4.519259000062448
+model only,4.396882999913032
+model only,4.479395999965163
+model only,4.489069999976891
+model only,4.580529000008937
+model only,4.369829999973263
+model only,4.57282899992606
+model only,4.492421999998442
+model only,4.402728000059142
+model only,4.496898999946097
+model only,4.353713000000425
+model only,4.608404999999038
+model only,4.580645000032746
+model only,4.456092999930661
+model only,4.4654019999370576
+model only,4.477609999980814
+model only,4.3427110000493485
+model only,4.4703590000381155
+model only,4.777524999894922
+model only,4.60163000002467
+model only,4.366878000041652
+model only,4.322469000044293
+model only,4.362474000004113
+model only,4.402202999926885
+model only,5.177252999942539
+model only,4.4123449999915465
+model only,4.381855000019641
+model only,4.685799999947449
+model only,4.939760000070237
+model only,5.345422999994298
+model only,4.691201000014189
+model only,4.68470900000284
+model only,5.532338999955755
+model only,4.758456999979899
+model only,4.679805000023407
+model only,4.385862999924939
+model only,4.616473000055521
+model only,4.409493999901315
+model only,4.390600000078848
+model only,4.5026660000075935
+model only,4.464407000000392
+model only,4.607620000001589
+model only,4.7210320000203865
+model only,4.608268000083626
+model only,4.425286000014239
+model only,4.382556999985354
+model only,4.381673000011688
+model only,4.384111000035773
+model only,4.476232999991225
+model only,4.398782999942341
+model only,4.378622999979598
+model only,4.55633299998226
+model only,4.439266000076714
+model only,4.3889060000310565
+model only,4.725581999991846
+model only,4.607940000028066
+model only,4.421334000085153
+model only,4.439441000045008
+model only,4.4187479999209245
+model only,4.536802000075113
+model only,4.367785999988882
+model only,4.376926999952957
+model only,6.150099000024056
+model only,5.987528999980896
+model only,6.558384000072692
+model only,6.316297000012128
+model only,6.1676950000446595
+model only,6.457009000087055
+model only,6.461329999979171
+model only,6.841129999997975
+model only,6.726926999931493
+model only,6.681129000071451
+model only,6.240128000058576
+model only,6.564879000052315
+model only,5.321549999962372
+model only,5.743114999972931
+model only,5.728369999928873
+model only,5.8569410000473
+model only,6.041722999952981
+model only,5.919185000038851
+model only,5.179913999995733
+model only,5.682299000000057
+model only,4.721687000028396
+model only,5.741130999922461
+model only,5.951346999950147
+model only,5.553439999971488
+model only,6.050799000036022
+model only,5.612493999933577
+model only,5.546697999989192
+model only,4.758693999974639
+model only,4.658693000010317
+model only,5.044106000013926
+model only,5.5677830000604445
+model only,5.5385330000490285
+model only,4.95258199998716
+model only,4.728985000042485
+model only,4.585730000030708
+model only,4.749853999896914
+model only,5.054680000057488
+model only,6.433330999925602
+model only,5.153557999960867
+model only,6.291216000022359
+model only,5.9597750000648375
+model only,6.318297000007078
+model only,5.820213999982116
+model only,6.872217000022829
+model only,6.137689000070168
+model only,6.089406999990388
+model only,6.420818000037798
+model only,6.654525000044487
+model only,6.8701159999591255
+model only,6.037198000058197
+model only,4.801386000053753
+model only,4.538499999966916
+model only,4.514443999937612
+model only,4.597708000005696
+model only,4.498672999943665
+model only,4.9740860000611065
+model only,4.489873000011357
+model only,4.6843979999948715
+model only,4.574126999955297
+model only,4.614013000036721
+model only,4.509799999937059
+model only,4.690308000022014
+model only,4.464991999952872
+model only,4.535448000069664
+model only,4.673877999948672
+model only,4.535180999937438
+model only,4.5088330000453425
+model only,4.373889000021336
+model only,4.3674229999624
+model only,4.371407000007821
+model only,4.420547999984592
+model only,4.737447000024986
+model only,4.9804529999164515
+model only,5.060368000044946
+model only,4.630674000054569
+model only,4.686247999984516
+model only,4.834737000010136
+model only,5.0815660000580465
+model only,5.681917000060821
+model only,5.229398999972545
+model only,5.624724999961472
+model only,10.680789999923945
+model only,6.119818999991367
+model only,5.638565000026574
+model only,6.280937000042286
+model only,6.579094000016994
+model only,6.08332900003461
+model only,6.99475600004007
+model only,5.046804000016891
+model only,4.7657259999596135
+model only,4.637105999904634
+model only,4.588171000023067
+model only,4.611049999994066
+model only,4.464363000010962
+model only,4.669906000003721
+model only,4.511600000000726
+model only,4.463041999997586
+model only,4.365338000070551
+model only,4.379911999990327
+model only,4.363425000065035
+model only,4.3901909999704
+model only,4.839846999971087
+model only,4.455298000038965
+model only,4.810490000068057
+model only,4.4141150000314155
+model only,4.442639999979292
+model only,4.443123999976706
+model only,4.538572000001295
+model only,4.550658999960433
+model only,4.407333000017388
+model only,4.418450000002849
+model only,4.444378000016513
+model only,4.394944999944528
+model only,4.473451999956524
+model only,5.740804999959437
+model only,4.776034000087748
+model only,5.1149840001016855
+model only,4.542526000022917
+model only,4.6508980000226074
+model only,4.665454000019054
+model only,4.66161299993928
+model only,4.566416999978173
+model only,4.880379000042012
+model only,4.54197400006251
+model only,4.449961999966945
+model only,6.034477000071092
+model only,6.209914000010031
+model only,6.25119000005725
+model only,5.4532170000811675
+model only,5.490323999993052
+model only,4.618250000021362
+model only,4.711978000045747
+model only,4.679229000089435
+model only,4.536864999977297
+model only,4.411905999972987
+model only,4.5112479999716015
+model only,4.540237000014713
+model only,4.455714000073385
+model only,4.521798999917337
+model only,4.330335999952695
+model only,4.417235999994773
+model only,4.444801000090592
+model only,4.3807739999692785
+model only,4.6901560000378595
+model only,4.350675999944542
+model only,4.431874000033531
+model only,4.497360999948796
+model only,4.499015000078543
+model only,4.3550210000375955
+model only,4.570432000036817
+model only,4.891231999977208
+model only,5.207998000059888
+model only,4.450700999996116
+model only,4.558970999937628
+model only,4.564272000038727
+model only,5.086219000077108
+model only,5.645044999937454
+model only,4.802256999937526
+model only,4.582385000048816
+model only,4.539894000004097
+model only,4.965063999975428
+model only,4.639635999978964
+model only,4.42318599993996
+model only,5.448220000062065
+model only,5.586860000107663
+model only,5.685009999979229
+model only,4.752212999960648
+model only,4.898313000012422
+model only,4.955569000003379
+model only,4.445803999942655
+model only,5.173066999986986
+model only,5.374696999979278
+model only,7.688478999966719
+model only,7.837386000005608
+model only,5.199062000087906
+model only,4.532438999945043
+model only,4.4121380000206045
+model only,4.530143000010867
+model only,4.8628970000663685
+model only,4.654467000023033
+model only,4.650909999895703
+model only,4.5751069999369065
+model only,4.5021659999520125
+model only,4.631457999948907
+model only,4.477821000023141
+model only,4.667471000061596
+model only,4.45220199992491
+model only,4.4043210000381805
+model only,4.382910000003903
+model only,4.294919000017217
+model only,4.562672000020029
+model only,4.463725000050545
+model only,4.701586999999563
+model only,4.363388000001578
+model only,4.373715000042466
+model only,4.403990000014346
+model only,4.588982999962354
+model only,4.534013000011328
+model only,4.607372000009491
+model only,4.852475999996386
+model only,4.528097999923375
+model only,4.523154000025897
+model only,4.445153999995455
+model only,4.415889999904721
+model only,4.641948000084994
+model only,4.721745999972882
+model only,4.6565500000497195
+model only,4.554028000029575
+model only,4.490916000008838
+model only,4.487464000021646
+model only,4.466737000029752
+model only,4.4240779999427104
+model only,4.612807999933466
+model only,6.320380999909503
+model only,4.706914000053075

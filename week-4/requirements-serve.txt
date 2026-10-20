@@ -1,0 +1,9 @@
+# Runtime dependencies for the container in Dockerfile.
+# No notebook, test or document tooling is installed in the image.
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+joblib>=1.3
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6

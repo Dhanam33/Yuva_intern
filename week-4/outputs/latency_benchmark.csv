@@ -1,0 +1,6 @@
+scenario,requests,rows_per_request,p50_ms,p95_ms,p99_ms,mean_ms,max_ms,ms_per_row,throughput_rows_per_s
+predict + explanation,300,1,13.316,18.546,21.139,14.067,25.095,13.316,71.1
+"predict, no explanation",300,1,7.635,9.544,11.933,8.03,59.775,7.635,124.5
+batch of 100,25,100,9.18,9.667,9.855,9.271,10.545,0.092,10786.5
+batch of 100 + explanations,10,100,534.951,544.918,544.918,538.319,571.099,5.35,185.8
+model only (no HTTP),300,1,4.608,6.433,6.995,4.926,10.681,4.608,203.0
