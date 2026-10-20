@@ -1,0 +1,421 @@
+{
+  "generated_at": "2026-10-20T13:17:30+00:00",
+  "dataset": {
+    "rows": 1800,
+    "columns": 13,
+    "numeric_features": 5,
+    "categorical_features": 6,
+    "encoded_features": 21,
+    "churn_yes": 480,
+    "churn_no": 1320,
+    "churn_rate": 0.26666666666666666,
+    "senior_citizens": 319,
+    "missing_cells": 562
+  },
+  "pca": {
+    "n_features": 21,
+    "n_components_90": 10,
+    "n_components_95": 12,
+    "explained_first": 0.24365989475954478,
+    "explained_first_two": 0.39219370136070125,
+    "explained_first_three": 0.5127953809160267,
+    "explained_first_ten": 0.9040235865089667,
+    "top_pc1": [
+      {
+        "feature": "total_charges",
+        "loading": 0.6732205417166104
+      },
+      {
+        "feature": "monthly_charges",
+        "loading": 0.49161349337899907
+      },
+      {
+        "feature": "tenure_months",
+        "loading": 0.4630168638382358
+      },
+      {
+        "feature": "internet_service_Fiber optic",
+        "loading": 0.20225957405538214
+      },
+      {
+        "feature": "support_tickets",
+        "loading": 0.15290315934592785
+      }
+    ]
+  },
+  "kmeans": {
+    "selected_k": 3,
+    "selected_silhouette": 0.16245773628598836,
+    "preferred_k": {
+      "silhouette": 3,
+      "davies_bouldin": 5,
+      "calinski_harabasz": 2
+    },
+    "elbow_k": 3,
+    "inertia": 11023.13546309587,
+    "sizes": [
+      685,
+      797,
+      318
+    ],
+    "profiles": [
+      {
+        "cluster": 0,
+        "size": 685,
+        "share": 0.38055555555555554,
+        "churn_rate": 0.30364963503649633,
+        "tenure_months": 48.31076923076923,
+        "monthly_charges": 73.53107902735562,
+        "total_charges": 3458.911441717791,
+        "support_tickets": 1.1424196018376722,
+        "senior_citizen": 0.00145985401459854,
+        "top_contract": "Month-to-month",
+        "top_contract_share": 0.5553892215568862,
+        "top_internet_service": "Fiber optic",
+        "top_internet_service_share": 0.7347242921013413,
+        "top_payment_method": "Electronic check",
+        "top_payment_method_share": 0.2957957957957958,
+        "top_paperless_billing": "Yes",
+        "top_paperless_billing_share": 0.7280832095096582,
+        "top_partner": "Yes",
+        "top_partner_share": 0.5111111111111111,
+        "top_dependents": "No",
+        "top_dependents_share": 0.6751117734724292,
+        "label": "Long-tenure, high-spend"
+      },
+      {
+        "cluster": 1,
+        "size": 797,
+        "share": 0.44277777777777777,
+        "churn_rate": 0.21831869510664995,
+        "tenure_months": 27.758169934640524,
+        "monthly_charges": 48.80101449275362,
+        "total_charges": 1172.3696749024707,
+        "support_tickets": 0.8754914809960681,
+        "senior_citizen": 0.0,
+        "top_contract": "Month-to-month",
+        "top_contract_share": 0.5089974293059126,
+        "top_internet_service": "DSL",
+        "top_internet_service_share": 0.4313222079589217,
+        "top_payment_method": "Bank transfer",
+        "top_payment_method_share": 0.3032258064516129,
+        "top_paperless_billing": "Yes",
+        "top_paperless_billing_share": 0.7049808429118773,
+        "top_partner": "No",
+        "top_partner_share": 0.5127551020408163,
+        "top_dependents": "No",
+        "top_dependents_share": 0.69693094629156,
+        "label": "Short-tenure, low-spend"
+      },
+      {
+        "cluster": 2,
+        "size": 318,
+        "share": 0.17666666666666667,
+        "churn_rate": 0.3081761006289308,
+        "tenure_months": 37.16558441558441,
+        "monthly_charges": 62.784327868852465,
+        "total_charges": 2255.855409836065,
+        "support_tickets": 1.0169491525423728,
+        "senior_citizen": 1.0,
+        "top_contract": "Month-to-month",
+        "top_contract_share": 0.5602605863192183,
+        "top_internet_service": "Fiber optic",
+        "top_internet_service_share": 0.538961038961039,
+        "top_payment_method": "Bank transfer",
+        "top_payment_method_share": 0.2703583061889251,
+        "top_paperless_billing": "Yes",
+        "top_paperless_billing_share": 0.7175324675324676,
+        "top_partner": "Yes",
+        "top_partner_share": 0.5194805194805194,
+        "top_dependents": "No",
+        "top_dependents_share": 0.7028753993610224,
+        "label": "Senior segment"
+      }
+    ],
+    "churn_overlap": {
+      "rates": [
+        0.30364963503649633,
+        0.21831869510664995,
+        0.3081761006289308
+      ],
+      "spread": 0.08985740552228086,
+      "overall": 0.26666666666666666
+    }
+  },
+  "hierarchical": {
+    "selected_linkage": "ward",
+    "selected_k": 3,
+    "selected_silhouette": 0.1446764050144217,
+    "sizes": [
+      801,
+      680,
+      319
+    ],
+    "profiles": [
+      {
+        "cluster": 0,
+        "size": 801,
+        "share": 0.445,
+        "churn_rate": 0.23720349563046192,
+        "tenure_months": 27.25392670157068,
+        "monthly_charges": 51.02870757180156,
+        "total_charges": 1218.7339583333332,
+        "support_tickets": 0.9594771241830066,
+        "senior_citizen": 0.0,
+        "top_contract": "Month-to-month",
+        "top_contract_share": 0.5261146496815287,
+        "top_internet_service": "DSL",
+        "top_internet_service_share": 0.36989795918367346,
+        "top_payment_method": "Electronic check",
+        "top_payment_method_share": 0.3,
+        "top_paperless_billing": "Yes",
+        "top_paperless_billing_share": 0.7064803049555273,
+        "top_partner": "Yes",
+        "top_partner_share": 0.5266497461928934,
+        "top_dependents": "No",
+        "top_dependents_share": 0.7028061224489796,
+        "label": "Short-tenure, low-spend"
+      },
+      {
+        "cluster": 1,
+        "size": 680,
+        "share": 0.37777777777777777,
+        "churn_rate": 0.2823529411764706,
+        "tenure_months": 48.85076923076923,
+        "monthly_charges": 71.13393846153846,
+        "total_charges": 3396.534555214724,
+        "support_tickets": 1.0446153846153847,
+        "senior_citizen": 0.0,
+        "top_contract": "Month-to-month",
+        "top_contract_share": 0.5363636363636364,
+        "top_internet_service": "Fiber optic",
+        "top_internet_service_share": 0.6631578947368421,
+        "top_payment_method": "Bank transfer",
+        "top_payment_method_share": 0.29545454545454547,
+        "top_paperless_billing": "Yes",
+        "top_paperless_billing_share": 0.7260479041916168,
+        "top_partner": "No",
+        "top_partner_share": 0.5358208955223881,
+        "top_dependents": "No",
+        "top_dependents_share": 0.6691616766467066,
+        "label": "Long-tenure, high-spend"
+      },
+      {
+        "cluster": 2,
+        "size": 319,
+        "share": 0.17722222222222223,
+        "churn_rate": 0.3072100313479624,
+        "tenure_months": 37.24595469255664,
+        "monthly_charges": 62.90062091503267,
+        "total_charges": 2268.8569607843137,
+        "support_tickets": 1.0168918918918919,
+        "senior_citizen": 1.0,
+        "top_contract": "Month-to-month",
+        "top_contract_share": 0.5584415584415584,
+        "top_internet_service": "Fiber optic",
+        "top_internet_service_share": 0.540453074433657,
+        "top_payment_method": "Bank transfer",
+        "top_payment_method_share": 0.2694805194805195,
+        "top_paperless_billing": "Yes",
+        "top_paperless_billing_share": 0.7184466019417476,
+        "top_partner": "Yes",
+        "top_partner_share": 0.5210355987055016,
+        "top_dependents": "No",
+        "top_dependents_share": 0.7006369426751592,
+        "label": "Senior segment"
+      }
+    ],
+    "trap": {
+      "linkage": "single",
+      "k": 2,
+      "silhouette": 0.29375292620241894,
+      "smallest_cluster": 1
+    }
+  },
+  "agreement": {
+    "ari_models": 0.7315758572963428,
+    "ami_models": 0.7331080167194407,
+    "ari_churn_kmeans": 0.014869594304266005,
+    "ari_churn_hierarchical": 0.009660715614495108
+  },
+  "dimensionality": {
+    "rows": [
+      {
+        "components": 2,
+        "variance_kept": 0.39219370136070125,
+        "silhouette_reduced_space": 0.3887411863294145,
+        "silhouette_original_space": 0.135184049526854,
+        "smallest_cluster": 528
+      },
+      {
+        "components": 3,
+        "variance_kept": 0.5127953809160267,
+        "silhouette_reduced_space": 0.3592652476593413,
+        "silhouette_original_space": 0.16329991519087847,
+        "smallest_cluster": 313
+      },
+      {
+        "components": 5,
+        "variance_kept": 0.6852005876160646,
+        "silhouette_reduced_space": 0.25589530639376196,
+        "silhouette_original_space": 0.16244763450065428,
+        "smallest_cluster": 318
+      },
+      {
+        "components": 8,
+        "variance_kept": 0.8306533143797596,
+        "silhouette_reduced_space": 0.20118563591756836,
+        "silhouette_original_space": 0.16245359053693598,
+        "smallest_cluster": 318
+      },
+      {
+        "components": 10,
+        "variance_kept": 0.9040235865089667,
+        "silhouette_reduced_space": 0.18256752900247497,
+        "silhouette_original_space": 0.16245773628598836,
+        "smallest_cluster": 318
+      },
+      {
+        "components": 12,
+        "variance_kept": 0.9592773973639666,
+        "silhouette_reduced_space": 0.17036609581114268,
+        "silhouette_original_space": 0.16243164712286645,
+        "smallest_cluster": 318
+      },
+      {
+        "components": 16,
+        "variance_kept": 1.0,
+        "silhouette_reduced_space": 0.16245773628598834,
+        "silhouette_original_space": 0.16245773628598836,
+        "smallest_cluster": 318
+      },
+      {
+        "components": 21,
+        "variance_kept": 1.0,
+        "silhouette_reduced_space": 0.16245773628598834,
+        "silhouette_original_space": 0.16245773628598836,
+        "smallest_cluster": 318
+      }
+    ],
+    "inflated_components": 2,
+    "inflated_reduced": 0.3887411863294145,
+    "inflated_original": 0.135184049526854
+  },
+  "tuning": {
+    "winner": "Logistic Regression",
+    "best_params": {
+      "model__C": "0.1",
+      "model__penalty": "l2"
+    },
+    "best_cv_score": 0.8060211612514332,
+    "n_combinations": {
+      "logistic": 5,
+      "random_forest": 32
+    },
+    "metrics": {
+      "accuracy": 0.6777777777777778,
+      "balanced_accuracy": 0.6709280303030303,
+      "precision": 0.4315068493150685,
+      "recall": 0.65625,
+      "f1": 0.5206611570247934,
+      "roc_auc": 0.7675189393939393,
+      "pr_auc": 0.5167710147131851,
+      "mcc": 0.3078913934101686,
+      "log_loss": 0.5711701938011821,
+      "brier": 0.1956181847323414,
+      "true_negative": 181,
+      "false_positive": 83,
+      "false_negative": 33,
+      "true_positive": 63
+    },
+    "comparison": [
+      {
+        "model": "Logistic Regression",
+        "default_cv_roc_auc": 0.8053961379104806,
+        "default_cv_std": 0.025189520972703154,
+        "tuned_cv_roc_auc": 0.8060211612514332,
+        "gain": 0.0006250233409526018,
+        "default_test_roc_auc": 0.7688604797979798
+      },
+      {
+        "model": "Random Forest",
+        "default_cv_roc_auc": 0.7789498713657563,
+        "default_cv_std": 0.01755783489051045,
+        "tuned_cv_roc_auc": 0.7990085443319794,
+        "gain": 0.0200586729662231,
+        "default_test_roc_auc": 0.7402146464646464
+      }
+    ],
+    "train_size": 1440,
+    "test_size": 360,
+    "cv_folds": 5,
+    "logistic_best": {
+      "model__C": "0.1",
+      "model__penalty": "l2"
+    },
+    "logistic_best_score": 0.8060211612514332,
+    "forest_best": {
+      "model__max_depth": "8",
+      "model__max_features": "sqrt",
+      "model__min_samples_leaf": "5",
+      "model__n_estimators": "300"
+    },
+    "forest_best_score": 0.7990085443319794
+  },
+  "nested_cv": {
+    "mean": 0.805011744128272,
+    "std": 0.025199087227521195,
+    "scores": [
+      0.8009558093346574,
+      0.7574321413183972,
+      0.8226134055517942,
+      0.8203360620422232,
+      0.8237213023942882
+    ],
+    "optimism": 0.0010094171231611604,
+    "learning_curve": [
+      {
+        "train_size": 115,
+        "train_mean": 0.8298612166154218,
+        "train_std": 0.0418276963887382,
+        "test_mean": 0.7484582319039695,
+        "test_std": 0.04041829039281801
+      },
+      {
+        "train_size": 322,
+        "train_mean": 0.8283546145010388,
+        "train_std": 0.014020587022657936,
+        "test_mean": 0.8018030049272253,
+        "test_std": 0.02104902037209805
+      },
+      {
+        "train_size": 529,
+        "train_mean": 0.8252592800591992,
+        "train_std": 0.010376218864928715,
+        "test_mean": 0.8039244446259088,
+        "test_std": 0.024830053601628793
+      },
+      {
+        "train_size": 737,
+        "train_mean": 0.8200842311701596,
+        "train_std": 0.009069925962900233,
+        "test_mean": 0.806703505540615,
+        "test_std": 0.028214828951785273
+      },
+      {
+        "train_size": 944,
+        "train_mean": 0.8220398412681984,
+        "train_std": 0.006591899938566308,
+        "test_mean": 0.8085700819016072,
+        "test_std": 0.025431960886120916
+      },
+      {
+        "train_size": 1152,
+        "train_mean": 0.8168773670110386,
+        "train_std": 0.005598116487310067,
+        "test_mean": 0.8100069081579434,
+        "test_std": 0.02382433941990436
+      }
+    ]
+  }
+}
